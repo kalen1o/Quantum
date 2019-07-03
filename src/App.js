@@ -6,14 +6,11 @@ import { createBrowserHistory } from "history";
 
 import Header from './components/Header';
 import SideBar from './components/SideBar';
+import MainPage from './screens/MainPage';
 
 class App extends Component {
   state = {
     open: false
-  }
-
-  componentDidMount() {
-    document.addEventListener("mousedown", this.handleCloseSideBar)
   }
 
   handleOpenSideBar = () => {
@@ -28,8 +25,13 @@ class App extends Component {
     return (
       <div className="App">
         <Router history = { createBrowserHistory() }> 
-        <Header open={this.state.open} onClickClose={this.handleCloseSideBar.bind(this)} />
-          <SideBar open={this.state.open} onClickOpen={this.handleOpenSideBar.bind(this)} onClickClose={this.handleCloseSideBar.bind(this)}/>
+        <Header open={this.state.open} onClickClose={this.handleCloseSideBar} />
+        <div className="content-wrapper">
+          <SideBar open={this.state.open} onClickOpen={this.handleOpenSideBar}/>
+          <Switch>
+            <Route path="/" component = { MainPage } exact />
+          </Switch>
+        </div>
         </Router>
       </div>
     )
