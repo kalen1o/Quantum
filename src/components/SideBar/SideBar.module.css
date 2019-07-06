@@ -18,24 +18,21 @@
 }
 
 .ul li {
-	width: 100%;
-	margin: 0 0 25px;
-	color: #999999;
-	border-left: 2px solid transparent;
-}
-
-.ul li > a {
 	display: flex;
 	align-items: center;
-	padding: 0 25px;
+	padding: 10px 25px;
+	width: 100%;
 	color: #999999;
+	border-left: 2px solid transparent;
+	cursor: pointer;
 }
 
 .ul .active {
+	background: #fafafa;
 	border-left: 2px solid #1875f0;
 }
 
-.ul li a > .label {
+.ul li > .label {
 	font-size: 13px;
 	margin-left: 20px;
 }
@@ -55,4 +52,21 @@
 	display: flex;
 	justify-content: center;
 	padding: 15px;
+}
+
+.drop {
+	transition: height 0.3s;
+	overflow: hidden;
+}
+
+.drop li {
+	padding: 0;
+}
+
+.drop li > a {
+	display: block;
+	width: 100%;
+	padding: 20px 0 20px 75px;
+	font-size: 13px;
+	color: #999999;
 }

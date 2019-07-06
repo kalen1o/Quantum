@@ -1,5 +1,8 @@
 .h5 {
 	padding: 33px 40px;
 	letter-spacing: 1.2px;
+}
+
+.h5 a {
 	color: #666666;
 }

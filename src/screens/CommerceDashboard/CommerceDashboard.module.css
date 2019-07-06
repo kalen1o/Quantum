@@ -1,0 +1,20 @@
+.h1 {
+	margin: 20px 0;
+	font-weight: 300;
+	color: #808080;
+}
+
+.table-card {
+	display: flex;
+	flex-wrap: wrap;
+	background: #ffffff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	margin-bottom: 30px;
+}
+
+.histograms-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}

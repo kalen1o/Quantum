@@ -6,7 +6,19 @@ import { createBrowserHistory } from "history";
 
 import Header from './components/Header';
 import SideBar from './components/SideBar';
-import MainPage from './screens/MainPage';
+import NotFound from './screens/NotFound';
+import Login from './screens/Login';
+import CommerceDashboard from './screens/CommerceDashboard';
+
+import {Provider, connect}   from 'react-redux';
+import {createStore} from 'redux';
+import loginReducer from './store/reducers/loginReducer';
+
+import users from './constants/users';
+
+const store = createStore(loginReducer)
+
+const history = createBrowserHistory()
 
 class App extends Component {
   state = {
@@ -22,15 +34,19 @@ class App extends Component {
   }
 
   render() {
+    let user = users.find(person => person.login === this.props.login);
     return (
       <div className="App">
-        <Router history = { createBrowserHistory() }> 
-        <Header open={this.state.open} onClickClose={this.handleCloseSideBar} />
-        <div className="content-wrapper">
+        <Router history = { history }> 
+        <Header open={this.state.open} onClickClose={this.handleCloseSideBar} user={user} />
+        <div className="wrapper">
           <SideBar open={this.state.open} onClickOpen={this.handleOpenSideBar}/>
-          <Switch>
-            <Route path="/" component = { MainPage } exact />
-          </Switch>
+          <div className="content-wrapper">
+            <Switch>
+              <Route path="/" component = { Login } exact />
+              <Route path="/commerce-dashboard" render = { (props) => <CommerceDashboard {...props} user={user} /> } exact />
+            </Switch>
+          </div>
         </div>
         </Router>
       </div>
@@ -38,5 +54,13 @@ class App extends Component {
   }
 }
 
-export default App;
+App = connect(state => ({login: state.login}), null)(App)
+
+const AppWrapper = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+)
+
+export default AppWrapper;
 

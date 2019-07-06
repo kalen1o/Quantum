@@ -1,0 +1,52 @@
+.login-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.login-holder {
+	position: relative;
+}
+
+.h2 {
+	margin-bottom: 20px;
+}
+
+.label {
+	display: block;
+	text-align: left;
+	margin: 0 10px 10px;
+	font-size: 14px;
+}
+
+.login-input {
+	display: block;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #f5f5f5;
+	outline: none;
+	margin-bottom: 20px;
+}
+
+.is-invalid {
+	border: 1px solid red;
+}
+
+.error {
+	position: absolute;
+	top: 65px;
+	left: 10px;
+	color: red;
+	font-size: 12px;
+	text-align: left;
+}
+
+.btn {
+	display: block;
+	border: 1px solid #f5f5f5;
+	border-radius: 10px;
+	outline: none;
+	padding: 5px;
+	width: 100%;
+}
