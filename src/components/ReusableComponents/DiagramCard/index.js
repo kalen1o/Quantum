@@ -59,7 +59,7 @@ class DiagramCard extends Component {
 							label={<CustomizeLabel />}
 						>
 							{data.map((item, index) => (
-								<Cell fill={index % 2 === 0 ? this.props.color[0] : this.props.color[1]} />
+								<Cell fill={index % 2 === 0 ? this.props.color[0] : this.props.color[1]} key={index}/>
 							))}
 						</Bar>
 					</BarChart>

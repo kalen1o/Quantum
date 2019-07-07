@@ -106,7 +106,7 @@ class SideBar extends Component {
 
 	handleOpenDrop = (value) => {
 		console.log(this.state.active, value)
-		this.state.active == value && this.state.openDrop ?
+		this.state.active === value && this.state.openDrop ?
 		this.setState(state => ({
 			openDrop: !state.openDrop
 		})) :
@@ -123,7 +123,9 @@ class SideBar extends Component {
 			case "/create-mail": this.setState({active: 2}); break;
 			case "/notes":
 			case "/to-do-list":
-			case "/messages": this.setState({active: 3})
+			case "/messages": this.setState({active: 3}); break;
+			default:
+				this.setState({active: 0})
 		}
 	}
 

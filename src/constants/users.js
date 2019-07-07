@@ -2,6 +2,11 @@ import anonymous from '../images/anonymous.jpg';
 import tonyAlvarez from '../images/Tony_Alvarez.png';
 import kateMiddleton from '../images/Kate_Middleton.png';
 import ronaldHenry from '../images/Ronald_Henry.png';
+import bag from '../images/bag.png';
+import shoes from '../images/shoes.png';
+import glass from '../images/glass.png';
+import shoes2 from '../images/shoes2.png';
+import clothes from '../images/clothes.png';
 
 const users = [
 	{
@@ -39,6 +44,97 @@ const users = [
 				{label: "Youtube", percent: 0},
 				{label: "Direct", percent: 0},
 			],
+			lastProductSales: [
+				{
+					image: bag,
+					product: "Valentino Lady's bag",
+					timeOrder: "09:29 PM",
+					number: 0,
+					price: 0,
+					quantity: 0,
+					totalPrice: 0,
+					customer: "J. Moody",
+				},
+				{
+					image: shoes,
+					product: "White Sneakers Nike",
+					timeOrder: "09:28 PM",
+					number: 0,
+					price: 0,
+					quantity: 0,
+					totalPrice: 0,
+					customer: "F. Newman",
+				},
+				{
+					image: glass,
+					product: "Black Female Sunglasses",
+					timeOrder: "09:26 PM",
+					number: 0,
+					price: 0,
+					quantity: 0,
+					totalPrice: 0,
+					customer: "F. Rodriguez",
+				},
+				
+				{
+					image: shoes2,
+					product: "White Orange Nike Sneakers",
+					timeOrder: "Yesterday",
+					number: 0,
+					price: 0,
+					quantity: 0,
+					totalPrice: 0,
+					customer: "M.French",
+				},
+				{
+					image: clothes,
+					product: "Raincoat jacket",
+					timeOrder: "Yesterday",
+					number: 0,
+					price: 0,
+					quantity: 0,
+					totalPrice: 0,
+					customer: "K. King",
+				},
+			],
+			stat: [
+				{label: "Total Revenue", quantity: 0},
+				{label: "Sales", quantity: 0},
+				{label: "Deliveries", quantity: 0},
+				{label: "Users", quantity: 0},
+			],
+			revenue: [
+				{
+					label1: "Total sales made today", 
+					percent: 55, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				},
+				{
+					label1: "Total sales made today", 
+					percent: 80, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				},
+				{
+					label1: "Total sales made today", 
+					percent: 60, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				}
+			]
 		}
 	},
 	{
@@ -76,6 +172,97 @@ const users = [
 				{label: "Bing", percent: 15},
 				{label: "Youtube", percent: 14},
 			],
+			lastProductSales: [
+				{
+					image: bag,
+					product: "Valentino Lady's bag",
+					timeOrder: "09:29 PM",
+					number: 190456,
+					price: 686.64,
+					quantity: 1,
+					totalPrice: 686.64,
+					customer: "J. Moody",
+				},
+				{
+					image: shoes,
+					product: "White Sneakers Nike",
+					timeOrder: "09:28 PM",
+					number: 190455,
+					price: 682.62,
+					quantity: 2,
+					totalPrice: 686.64,
+					customer: "F. Newman",
+				},
+				{
+					image: glass,
+					product: "Black Female Sunglasses",
+					timeOrder: "09:26 PM",
+					number: 190454,
+					price: 19.91,
+					quantity: 3,
+					totalPrice: 686.64,
+					customer: "F. Rodriguez",
+				},
+				
+				{
+					image: shoes2,
+					product: "White Orange Nike Sneakers",
+					timeOrder: "Yesterday",
+					number: 190453,
+					price: 216.76,
+					quantity: 1,
+					totalPrice: 686.64,
+					customer: "M.French",
+				},
+				{
+					image: clothes,
+					product: "Raincoat jacket",
+					timeOrder: "Yesterday",
+					number: 190452,
+					price: 273.63,
+					quantity: 1,
+					totalPrice: 686.64,
+					customer: "K. King",
+				},
+			],
+			stat: [
+				{label: "Total Revenue", quantity: 40.256},
+				{label: "Sales", quantity: 1.565},
+				{label: "Deliveries", quantity: 1245},
+				{label: "Users", quantity: 1576},
+			],
+			revenue: [
+				{
+					label1: "Total sales made today", 
+					percent: 55, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				},
+				{
+					label1: "Total sales made today", 
+					percent: 80, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				},
+				{
+					label1: "Total sales made today", 
+					percent: 60, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				}
+			]
 		} 
 	},
 	{
@@ -113,6 +300,97 @@ const users = [
 				{label: "Bing", percent: 6},
 				{label: "Youtube", percent: 9},
 			],
+			lastProductSales: [
+				{
+					image: bag,
+					product: "Valentino Lady's bag",
+					timeOrder: "09:29 PM",
+					number: 190456,
+					price: 686.64,
+					quantity: 1,
+					totalPrice: 686.64,
+					customer: "J. Moody",
+				},
+				{
+					image: shoes,
+					product: "White Sneakers Nike",
+					timeOrder: "09:28 PM",
+					number: 190455,
+					price: 682.62,
+					quantity: 2,
+					totalPrice: 686.64,
+					customer: "F. Newman",
+				},
+				{
+					image: glass,
+					product: "Black Female Sunglasses",
+					timeOrder: "09:26 PM",
+					number: 190454,
+					price: 19.91,
+					quantity: 3,
+					totalPrice: 686.64,
+					customer: "F. Rodriguez",
+				},
+				
+				{
+					image: shoes2,
+					product: "White Orange Nike Sneakers",
+					timeOrder: "Yesterday",
+					number: 190453,
+					price: 216.76,
+					quantity: 1,
+					totalPrice: 686.64,
+					customer: "M.French",
+				},
+				{
+					image: clothes,
+					product: "Raincoat jacket",
+					timeOrder: "Yesterday",
+					number: 190452,
+					price: 273.63,
+					quantity: 1,
+					totalPrice: 686.64,
+					customer: "K. King",
+				},
+			],
+			stat: [
+				{label: "Total Revenue", quantity: 40.256},
+				{label: "Sales", quantity: 1.565},
+				{label: "Deliveries", quantity: 1245},
+				{label: "Users", quantity: 1576},
+			],
+			revenue: [
+				{
+					label1: "Total sales made today", 
+					percent: 55, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				},
+				{
+					label1: "Total sales made today", 
+					percent: 80, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				},
+				{
+					label1: "Total sales made today", 
+					percent: 60, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				}
+			]
 		} 
 	},
 	{
@@ -150,6 +428,97 @@ const users = [
 				{label: "Bing", percent: 1},
 				{label: "Youtube", percent: 16},
 			],
+			lastProductSales: [
+				{
+					image: bag,
+					product: "Valentino Lady's bag",
+					timeOrder: "09:29 PM",
+					number: 190456,
+					price: 686.64,
+					quantity: 1,
+					totalPrice: 686.64,
+					customer: "J. Moody",
+				},
+				{
+					image: shoes,
+					product: "White Sneakers Nike",
+					timeOrder: "09:28 PM",
+					number: 190455,
+					price: 682.62,
+					quantity: 2,
+					totalPrice: 686.64,
+					customer: "F. Newman",
+				},
+				{
+					image: glass,
+					product: "Black Female Sunglasses",
+					timeOrder: "09:26 PM",
+					number: 190454,
+					price: 19.91,
+					quantity: 3,
+					totalPrice: 686.64,
+					customer: "F. Rodriguez",
+				},
+				
+				{
+					image: shoes2,
+					product: "White Orange Nike Sneakers",
+					timeOrder: "Yesterday",
+					number: 190453,
+					price: 216.76,
+					quantity: 1,
+					totalPrice: 686.64,
+					customer: "M.French",
+				},
+				{
+					image: clothes,
+					product: "Raincoat jacket",
+					timeOrder: "Yesterday",
+					number: 190452,
+					price: 273.63,
+					quantity: 1,
+					totalPrice: 686.64,
+					customer: "K. King",
+				},
+			],
+			stat: [
+				{label: "Total Revenue", quantity: 40.256},
+				{label: "Sales", quantity: 1.565},
+				{label: "Deliveries", quantity: 1245},
+				{label: "Users", quantity: 1576},
+			],
+			revenue: [
+				{
+					label1: "Total sales made today", 
+					percent: 55, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				},
+				{
+					label1: "Total sales made today", 
+					percent: 80, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				},
+				{
+					label1: "Total sales made today", 
+					percent: 60, 
+					label2: "Target", 
+					number2: 1000, 
+					label3: "Last week", 
+					number3: 224, 
+					label4: "Last month", 
+					number4: 965
+				}
+			]
 		}  
 	},
 ] 

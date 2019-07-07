@@ -4,6 +4,12 @@ import WayBar from '../../components/ReusableComponents/WayBar';
 import Cell from '../../components/ReusableComponents/Cell';
 import DiagramCard from '../../components/ReusableComponents/DiagramCard';
 import LastProductSalesCard from '../../components/ReusableComponents/LastProductSalesCard';
+import StatCard from '../../components/ReusableComponents/StatCard';
+import RevenueCard from '../../components/ReusableComponents/RevenueCard';
+import timeline from '../../icons/timeline.svg';
+import ishoppingCart from '../../icons/ishopping_cart.svg';
+import shoppingBasket from '../../icons/shopping_basket.svg';
+import people from '../../icons/people.svg';
 
 const way = [
 	{
@@ -11,9 +17,21 @@ const way = [
 	}
 ]
 
+const statIcons = [
+	timeline,
+	ishoppingCart,
+	shoppingBasket,
+	people
+]
+
+const revenueColor = [
+	"#1875F0",
+	"#50D166",
+	"#5553CE"
+]
+
 class CommerceDashboard extends Component {
 	render() {
-		console.log(this.props, 'here')
 		return (
 			<div className="content">
 				<WayBar label="Dashboard" array={way} />
@@ -27,7 +45,24 @@ class CommerceDashboard extends Component {
 					<DiagramCard data={this.props.user.commerceDashboard.barChartGroupsGoods} header="Groups Goods" color={["#1875f0", "#50D166"]} />
 					<DiagramCard data={this.props.user.commerceDashboard.barChartChannel} header="Channel" color={["#f13a30", "#5553ce"]} />
 				</div>
-				<LastProductSalesCard />
+				<LastProductSalesCard data={this.props.user.commerceDashboard.lastProductSales} />
+				<div className={classes["card-wrapper"]}>
+					{this.props.user.commerceDashboard.stat.map((item, index) => {
+						const icon = statIcons[index]
+						return (
+							<StatCard data={item} icon={icon} />
+						)
+					}
+					)}
+				</div>
+				<div className={classes["card-wrapper"]}>
+					{this.props.user.commerceDashboard.revenue.map((item, index) => {
+						const color = revenueColor[index]
+						return (
+							<RevenueCard data={item} color={color} />
+						)
+					})}
+				</div>
 			</div>
 		)
 	}
