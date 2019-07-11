@@ -1,0 +1,30 @@
+.card {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	width: 20%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 2px solid #f5f5f5;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.h1 {
+	font-weight: 500;
+	color: #808080;
+}
+
+.h6 {
+	color: #999999;
+}

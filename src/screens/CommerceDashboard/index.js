@@ -6,6 +6,7 @@ import DiagramCard from '../../components/ReusableComponents/DiagramCard';
 import LastProductSalesCard from '../../components/ReusableComponents/LastProductSalesCard';
 import StatCard from '../../components/ReusableComponents/StatCard';
 import RevenueCard from '../../components/ReusableComponents/RevenueCard';
+import SimpleTable from '../../components/ReusableComponents/SimpleTable';
 import timeline from '../../icons/timeline.svg';
 import ishoppingCart from '../../icons/ishopping_cart.svg';
 import shoppingBasket from '../../icons/shopping_basket.svg';
@@ -29,6 +30,9 @@ const revenueColor = [
 	"#50D166",
 	"#5553CE"
 ]
+
+const viewLabels = ["Image", "Product", "Views", "Price"]
+const saleLabels = ["Image", "Product", "Sales", "Price"]
 
 class CommerceDashboard extends Component {
 	render() {
@@ -62,6 +66,10 @@ class CommerceDashboard extends Component {
 							<RevenueCard data={item} color={color} />
 						)
 					})}
+				</div>
+				<div className={classes["simple-table-wrapper"]}>
+					<SimpleTable label="Products Views Stat" data={this.props.user.commerceDashboard.products} sort="views" labels={viewLabels} />
+					<SimpleTable label="Top Sale Products" data={this.props.user.commerceDashboard.products} sort="sales" labels={saleLabels} />
 				</div>
 			</div>
 		)

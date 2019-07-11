@@ -9,6 +9,8 @@ import SideBar from './components/SideBar';
 import NotFound from './screens/NotFound';
 import Login from './screens/Login';
 import CommerceDashboard from './screens/CommerceDashboard';
+import AnalyticsDashboard from './screens/AnalyticsDashboard';
+import AllDeals from './screens/AllDeals';
 
 import {Provider, connect}   from 'react-redux';
 import {createStore} from 'redux';
@@ -45,6 +47,8 @@ class App extends Component {
             <Switch>
               <Route path="/" component = { Login } exact />
               <Route path="/commerce-dashboard" render = { (props) => <CommerceDashboard {...props} user={user} /> } exact />
+              <Route path="/analytics-dashboard" render = { (props) => <AnalyticsDashboard {...props} user={user} /> } exact />
+              <Route path="/deals-dashboard" render = { (props) => <AllDeals {...props} user={user} /> } exact />
             </Switch>
           </div>
         </div>

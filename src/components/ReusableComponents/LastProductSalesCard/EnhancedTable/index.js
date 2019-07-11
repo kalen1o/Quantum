@@ -14,11 +14,6 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Divider from '@material-ui/core/Divider';
 import DeleteIcon from "@material-ui/icons/Delete";
 import dots from '../../../../icons/dots.svg';
-import bag from '../../../../images/bag.png';
-import shoes from '../../../../images/shoes.png';
-import glass from '../../../../images/glass.png';
-import shoes2 from '../../../../images/shoes2.png';
-import clothes from '../../../../images/clothes.png';
 
 function desc(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {

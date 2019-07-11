@@ -4,30 +4,36 @@
 	color: #808080;
 }
 
-.table-card {
+.tabs-wrapper {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 	background: #ffffff;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
 	border-radius: 6px;
-	margin-bottom: 30px;
+	padding: 0 30px;
+	margin-bottom: 20px;
 }
 
-.histograms-wrapper {
+.btn {
+	display: flex;
+	align-items: center;
+	border: none;
+	outline: none;
+	background: transparent;
+	color: #b3b3b3;
+}
+
+.info-boards-wrapper {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 30px;
+	align-items: flex-start;
+	margin-bottom: 20px;
 }
 
-.card-wrapper {
+.task-card-wrapper, .tables-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 20px;
-}
-
-.simple-table-wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }

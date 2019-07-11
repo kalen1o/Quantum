@@ -2,11 +2,24 @@ import anonymous from '../images/anonymous.jpg';
 import tonyAlvarez from '../images/Tony_Alvarez.png';
 import kateMiddleton from '../images/Kate_Middleton.png';
 import ronaldHenry from '../images/Ronald_Henry.png';
+import garyBryan from '../images/Gary_Bryan.png';
+import miltonDay from '../images/Milton_Day.png';
+import nicholasStokes from '../images/Nicholas_Stokes.png';
+import adaThompson from '../images/Ada_Thompson.png';
+import lelaHarris from '../images/Lela_Harris.png';
 import bag from '../images/bag.png';
 import shoes from '../images/shoes.png';
 import glass from '../images/glass.png';
 import shoes2 from '../images/shoes2.png';
 import clothes from '../images/clothes.png';
+import sony from '../images/sony.png';
+import apple7plus from '../images/apple7plus.png';
+import apple5sgray from '../images/apple5sgray.png';
+import apple732 from '../images/apple732.png';
+import apple5ssilver from '../images/apple5ssilver.png';
+import apple7128 from '../images/apple7128.png';
+import senseit from '../images/senseit.png';
+import xiomi from '../images/xiomi.png';
 
 const users = [
 	{
@@ -133,6 +146,214 @@ const users = [
 					number3: 224, 
 					label4: "Last month", 
 					number4: 965
+				}
+			],
+			products: [
+				{
+					image: sony,
+					name: "Sony Xperia X Compact (black)",
+					views: 1334,
+					sales: 20,
+					price: 915.66
+				},
+				{
+					image: apple7plus,
+					name: "Apple iPhone 7 Plus 128GB (black)",
+					views: 1223,
+					sales: 21,
+					price: 456.75
+				},
+				{
+					image: apple5sgray,
+					name: "Apple iPhone 5s 16GB (gray space)",
+					views: 1123,
+					sales: 22,
+					price: 696.50
+				},
+				{
+					image: apple732,
+					name: "Apple iPhone 7 32GB (pink gold)",
+					views: 956,
+					sales: 23,
+					price: 456.48
+				},
+				{
+					image: apple5ssilver,
+					name: "Apple iPhone 5s 16GB (silver)",
+					views: 800,
+					sales: 54,
+					price: 915.66
+				},
+				{
+					image: apple7128,
+					name: "Apple iPhone 7 128GB (pink gold)",
+					views: 810,
+					sales: 48,
+					price: 456.78
+				},
+				{
+					image: senseit,
+					name: "SENSEIT E400 (blue)",
+					views: 820,
+					sales: 47,
+					price: 695.50
+				},
+				{
+					image: xiomi,
+					name: "Xiaomi Redmi 3 S 2GB/16GB (silver)",
+					views: 830,
+					sales: 34,
+					price: 456.48
+				}
+			]
+		},
+		analyticsDashboard: {
+			infoBoards: [
+				{
+					label: "Incoming requests 5",
+					children: [
+						"Incoming requests",
+						"The 3 Golden Rules Professional Graphic...",
+						"The Universe Through A Child S Eyes",
+						"The Basics Of Western Astrology Explained",
+						"Astronomy Or Astrology...",
+						"How To Maintain Your Mental Health"
+					]
+				},
+				{
+					label: "Intial Contact 2",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Astronomy Or Astrology...",
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Where To Look For Ch..."
+					]
+				},
+				{
+					label: "Offer Made 2",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"6 Powerful Tips To Creating Testimonial...",
+						"Stair Lifts Feel The Freedom Of Your Home"
+					]
+				},
+				{
+					label: "Negotiation 6",
+					children: [
+						"The Universe Through...",
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Althusser Competing Interpellations And....",
+						"Creating Remarkable Poster Prints ..."
+					]
+				},
+				{
+					label: "Contract 2",
+					children: [
+						"What If They Let You Run The Hubble",
+						"How To Fly A Private Jet..."
+					]
+				},
+				{
+					label: "Won leads 7",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"How To Boost Your Traffic Of Your Blog And...",
+						"How To Maintain Your Mental Health"
+					]
+				}
+			],
+			tasks: [
+				{
+					label: "Overdue tasks",
+					quantity: 2,
+					percent: 10,
+					lastWeek: 4
+				},
+				{
+					label: "Task To Do",
+					quantity: 10,
+					percent: 70,
+					lastWeek: 4
+				},
+				{
+					label: "Completed Task",
+					quantity: 5,
+					percent: 10,
+					lastWeek: 4
+				},
+				{
+					label: "Leads without To Do",
+					quantity: 2,
+					percent: 10,
+					lastWeek: 4
+				}
+			],
+			circle: [
+				{
+					name: "Incoming requests",
+					value: 85.6
+				},
+				{
+					name: "Intial Contact",
+					value: 20.9
+				},
+				{
+					name: "Offer Made",
+					value: 14.9
+				},
+				{
+					name: "Negotiation",
+					value: 11.9
+				},
+				{
+					name: "Contract",
+					value: 11.9
+				},
+				{
+					name: "Won leads",
+					value: 11.9
+				},
+			],
+			totalDeals: [
+				{
+					image: garyBryan,
+					name: "Gary Bryan",
+					deals: 33,
+					won: 5,
+					todo: 24,
+					sale: 984
+				},
+				{
+					image: miltonDay,
+					name: "Milton Day",
+					deals: 23,
+					won: 4,
+					todo: 21,
+					sale: 847
+				},
+				{
+					image: nicholasStokes,
+					name: "Nick Stok",
+					deals: 15,
+					won: 2,
+					todo: 15,
+					sale: 610
+				},
+				{
+					image: adaThompson,
+					name: "Ada Thom",
+					deals: 12,
+					won: 1,
+					todo: 12,
+					sale: 567
+				},
+				{
+					image: lelaHarris,
+					name: "Lela Harris",
+					deals: 8,
+					won: 2,
+					todo: 6,
+					sale: 465
 				}
 			]
 		}
@@ -262,8 +483,216 @@ const users = [
 					label4: "Last month", 
 					number4: 965
 				}
+			],
+			products: [
+				{
+					image: sony,
+					name: "Sony Xperia X Compact (black)",
+					views: 1334,
+					sales: 20,
+					price: 915.66
+				},
+				{
+					image: apple7plus,
+					name: "Apple iPhone 7 Plus 128GB (black)",
+					views: 1223,
+					sales: 21,
+					price: 456.75
+				},
+				{
+					image: apple5sgray,
+					name: "Apple iPhone 5s 16GB (gray space)",
+					views: 1123,
+					sales: 22,
+					price: 696.50
+				},
+				{
+					image: apple732,
+					name: "Apple iPhone 7 32GB (pink gold)",
+					views: 956,
+					sales: 23,
+					price: 456.48
+				},
+				{
+					image: apple5ssilver,
+					name: "Apple iPhone 5s 16GB (silver)",
+					views: 800,
+					sales: 54,
+					price: 915.66
+				},
+				{
+					image: apple7128,
+					name: "Apple iPhone 7 128GB (pink gold)",
+					views: 810,
+					sales: 48,
+					price: 456.78
+				},
+				{
+					image: senseit,
+					name: "SENSEIT E400 (blue)",
+					views: 820,
+					sales: 47,
+					price: 695.50
+				},
+				{
+					image: xiomi,
+					name: "Xiaomi Redmi 3 S 2GB/16GB (silver)",
+					views: 830,
+					sales: 34,
+					price: 456.48
+				}
 			]
-		} 
+		},
+		analyticsDashboard: {
+			infoBoards: [
+				{
+					label: "Incoming requests 5",
+					children: [
+						"Incoming requests",
+						"The 3 Golden Rules Professional Graphic...",
+						"The Universe Through A Child S Eyes",
+						"The Basics Of Western Astrology Explained",
+						"Astronomy Or Astrology...",
+						"How To Maintain Your Mental Health"
+					]
+				},
+				{
+					label: "Intial Contact 2",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Astronomy Or Astrology...",
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Where To Look For Ch..."
+					]
+				},
+				{
+					label: "Offer Made 2",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"6 Powerful Tips To Creating Testimonial...",
+						"Stair Lifts Feel The Freedom Of Your Home"
+					]
+				},
+				{
+					label: "Negotiation 6",
+					children: [
+						"The Universe Through...",
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Althusser Competing Interpellations And....",
+						"Creating Remarkable Poster Prints ..."
+					]
+				},
+				{
+					label: "Contract 2",
+					children: [
+						"What If They Let You Run The Hubble",
+						"How To Fly A Private Jet..."
+					]
+				},
+				{
+					label: "Won leads 7",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"How To Boost Your Traffic Of Your Blog And...",
+						"How To Maintain Your Mental Health"
+					]
+				}
+			],
+			tasks: [
+				{
+					label: "Overdue tasks",
+					quantity: 2,
+					percent: 10,
+					lastWeek: 4
+				},
+				{
+					label: "Task To Do",
+					quantity: 10,
+					percent: 70,
+					lastWeek: 4
+				},
+				{
+					label: "Completed Task",
+					quantity: 5,
+					percent: 10,
+					lastWeek: 4
+				},
+				{
+					label: "Leads without To Do",
+					quantity: 2,
+					percent: 10,
+					lastWeek: 4
+				}
+			],
+			circle: [
+				{
+					name: "Incoming requests",
+					value: 85.6
+				},
+				{
+					name: "Intial Contact",
+					value: 20.9
+				},
+				{
+					name: "Offer Made",
+					value: 14.9
+				},
+				{
+					name: "Negotiation",
+					value: 11.9
+				},
+				{
+					name: "Contract",
+					value: 11.9
+				},
+				{
+					name: "Won leads",
+					value: 11.9
+				},
+			],
+			totalDeals: [
+				{
+					image: garyBryan,
+					name: "Gary Bryan",
+					deals: 33,
+					won: 5,
+					todo: 24,
+					sale: 984
+				},
+				{
+					image: miltonDay,
+					name: "Milton Day",
+					deals: 23,
+					won: 4,
+					todo: 21,
+					sale: 847
+				},
+				{
+					image: nicholasStokes,
+					name: "Nick Stok",
+					deals: 15,
+					won: 2,
+					todo: 15,
+					sale: 610
+				},
+				{
+					image: adaThompson,
+					name: "Ada Thom",
+					deals: 12,
+					won: 1,
+					todo: 12,
+					sale: 567
+				},
+				{
+					image: lelaHarris,
+					name: "Lela Harris",
+					deals: 8,
+					won: 2,
+					todo: 6,
+					sale: 465
+				}
+			]
+		}
 	},
 	{
 		login: 'katemiddleton@gmail.com',
@@ -390,8 +819,216 @@ const users = [
 					label4: "Last month", 
 					number4: 965
 				}
+			],
+			products: [
+				{
+					image: sony,
+					name: "Sony Xperia X Compact (black)",
+					views: 1334,
+					sales: 20,
+					price: 915.66
+				},
+				{
+					image: apple7plus,
+					name: "Apple iPhone 7 Plus 128GB (black)",
+					views: 1223,
+					sales: 21,
+					price: 456.75
+				},
+				{
+					image: apple5sgray,
+					name: "Apple iPhone 5s 16GB (gray space)",
+					views: 1123,
+					sales: 22,
+					price: 696.50
+				},
+				{
+					image: apple732,
+					name: "Apple iPhone 7 32GB (pink gold)",
+					views: 956,
+					sales: 23,
+					price: 456.48
+				},
+				{
+					image: apple5ssilver,
+					name: "Apple iPhone 5s 16GB (silver)",
+					views: 800,
+					sales: 54,
+					price: 915.66
+				},
+				{
+					image: apple7128,
+					name: "Apple iPhone 7 128GB (pink gold)",
+					views: 810,
+					sales: 48,
+					price: 456.78
+				},
+				{
+					image: senseit,
+					name: "SENSEIT E400 (blue)",
+					views: 820,
+					sales: 47,
+					price: 695.50
+				},
+				{
+					image: xiomi,
+					name: "Xiaomi Redmi 3 S 2GB/16GB (silver)",
+					views: 830,
+					sales: 34,
+					price: 456.48
+				}
 			]
-		} 
+		},
+		analyticsDashboard: {
+			infoBoards: [
+				{
+					label: "Incoming requests 5",
+					children: [
+						"Incoming requests",
+						"The 3 Golden Rules Professional Graphic...",
+						"The Universe Through A Child S Eyes",
+						"The Basics Of Western Astrology Explained",
+						"Astronomy Or Astrology...",
+						"How To Maintain Your Mental Health"
+					]
+				},
+				{
+					label: "Intial Contact 2",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Astronomy Or Astrology...",
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Where To Look For Ch..."
+					]
+				},
+				{
+					label: "Offer Made 2",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"6 Powerful Tips To Creating Testimonial...",
+						"Stair Lifts Feel The Freedom Of Your Home"
+					]
+				},
+				{
+					label: "Negotiation 6",
+					children: [
+						"The Universe Through...",
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Althusser Competing Interpellations And....",
+						"Creating Remarkable Poster Prints ..."
+					]
+				},
+				{
+					label: "Contract 2",
+					children: [
+						"What If They Let You Run The Hubble",
+						"How To Fly A Private Jet..."
+					]
+				},
+				{
+					label: "Won leads 7",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"How To Boost Your Traffic Of Your Blog And...",
+						"How To Maintain Your Mental Health"
+					]
+				}
+			],
+			tasks: [
+				{
+					label: "Overdue tasks",
+					quantity: 2,
+					percent: 10,
+					lastWeek: 4
+				},
+				{
+					label: "Task To Do",
+					quantity: 10,
+					percent: 70,
+					lastWeek: 4
+				},
+				{
+					label: "Completed Task",
+					quantity: 5,
+					percent: 10,
+					lastWeek: 4
+				},
+				{
+					label: "Leads without To Do",
+					quantity: 2,
+					percent: 10,
+					lastWeek: 4
+				}
+			],
+			circle: [
+				{
+					name: "Incoming requests",
+					value: 85.6
+				},
+				{
+					name: "Intial Contact",
+					value: 20.9
+				},
+				{
+					name: "Offer Made",
+					value: 14.9
+				},
+				{
+					name: "Negotiation",
+					value: 11.9
+				},
+				{
+					name: "Contract",
+					value: 11.9
+				},
+				{
+					name: "Won leads",
+					value: 11.9
+				},
+			],
+			totalDeals: [
+				{
+					image: garyBryan,
+					name: "Gary Bryan",
+					deals: 33,
+					won: 5,
+					todo: 24,
+					sale: 984
+				},
+				{
+					image: miltonDay,
+					name: "Milton Day",
+					deals: 23,
+					won: 4,
+					todo: 21,
+					sale: 847
+				},
+				{
+					image: nicholasStokes,
+					name: "Nick Stok",
+					deals: 15,
+					won: 2,
+					todo: 15,
+					sale: 610
+				},
+				{
+					image: adaThompson,
+					name: "Ada Thom",
+					deals: 12,
+					won: 1,
+					todo: 12,
+					sale: 567
+				},
+				{
+					image: lelaHarris,
+					name: "Lela Harris",
+					deals: 8,
+					won: 2,
+					todo: 6,
+					sale: 465
+				}
+			]
+		}
 	},
 	{
 		login: 'ronaldhenry@gmail.com',
@@ -518,8 +1155,216 @@ const users = [
 					label4: "Last month", 
 					number4: 965
 				}
+			],
+			products: [
+				{
+					image: sony,
+					name: "Sony Xperia X Compact (black)",
+					views: 1334,
+					sales: 20,
+					price: 915.66
+				},
+				{
+					image: apple7plus,
+					name: "Apple iPhone 7 Plus 128GB (black)",
+					views: 1223,
+					sales: 21,
+					price: 456.75
+				},
+				{
+					image: apple5sgray,
+					name: "Apple iPhone 5s 16GB (gray space)",
+					views: 1123,
+					sales: 22,
+					price: 696.50
+				},
+				{
+					image: apple732,
+					name: "Apple iPhone 7 32GB (pink gold)",
+					views: 956,
+					sales: 23,
+					price: 456.48
+				},
+				{
+					image: apple5ssilver,
+					name: "Apple iPhone 5s 16GB (silver)",
+					views: 800,
+					sales: 54,
+					price: 915.66
+				},
+				{
+					image: apple7128,
+					name: "Apple iPhone 7 128GB (pink gold)",
+					views: 810,
+					sales: 48,
+					price: 456.78
+				},
+				{
+					image: senseit,
+					name: "SENSEIT E400 (blue)",
+					views: 820,
+					sales: 47,
+					price: 695.50
+				},
+				{
+					image: xiomi,
+					name: "Xiaomi Redmi 3 S 2GB/16GB (silver)",
+					views: 830,
+					sales: 34,
+					price: 456.48
+				}
 			]
-		}  
+		},
+		analyticsDashboard: {
+			infoBoards: [
+				{
+					label: "Incoming requests 5",
+					children: [
+						"Incoming requests",
+						"The 3 Golden Rules Professional Graphic...",
+						"The Universe Through A Child S Eyes",
+						"The Basics Of Western Astrology Explained",
+						"Astronomy Or Astrology...",
+						"How To Maintain Your Mental Health"
+					]
+				},
+				{
+					label: "Intial Contact 2",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Astronomy Or Astrology...",
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Where To Look For Ch..."
+					]
+				},
+				{
+					label: "Offer Made 2",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"6 Powerful Tips To Creating Testimonial...",
+						"Stair Lifts Feel The Freedom Of Your Home"
+					]
+				},
+				{
+					label: "Negotiation 6",
+					children: [
+						"The Universe Through...",
+						"Vinyl Banners With Its Different Types Kinds...",
+						"Althusser Competing Interpellations And....",
+						"Creating Remarkable Poster Prints ..."
+					]
+				},
+				{
+					label: "Contract 2",
+					children: [
+						"What If They Let You Run The Hubble",
+						"How To Fly A Private Jet..."
+					]
+				},
+				{
+					label: "Won leads 7",
+					children: [
+						"Vinyl Banners With Its Different Types Kinds...",
+						"How To Boost Your Traffic Of Your Blog And...",
+						"How To Maintain Your Mental Health"
+					]
+				}
+			],
+			tasks: [
+				{
+					label: "Overdue tasks",
+					quantity: 2,
+					percent: 10,
+					lastWeek: 4
+				},
+				{
+					label: "Task To Do",
+					quantity: 10,
+					percent: 70,
+					lastWeek: 4
+				},
+				{
+					label: "Completed Task",
+					quantity: 5,
+					percent: 10,
+					lastWeek: 4
+				},
+				{
+					label: "Leads without To Do",
+					quantity: 2,
+					percent: 10,
+					lastWeek: 4
+				}
+			],
+			circle: [
+				{
+					name: "Incoming requests",
+					value: 85.6
+				},
+				{
+					name: "Intial Contact",
+					value: 20.9
+				},
+				{
+					name: "Offer Made",
+					value: 14.9
+				},
+				{
+					name: "Negotiation",
+					value: 11.9
+				},
+				{
+					name: "Contract",
+					value: 11.9
+				},
+				{
+					name: "Won leads",
+					value: 11.9
+				},
+			],
+			totalDeals: [
+				{
+					image: garyBryan,
+					name: "Gary Bryan",
+					deals: 33,
+					won: 5,
+					todo: 24,
+					sale: 984
+				},
+				{
+					image: miltonDay,
+					name: "Milton Day",
+					deals: 23,
+					won: 4,
+					todo: 21,
+					sale: 847
+				},
+				{
+					image: nicholasStokes,
+					name: "Nick Stok",
+					deals: 15,
+					won: 2,
+					todo: 15,
+					sale: 610
+				},
+				{
+					image: adaThompson,
+					name: "Ada Thom",
+					deals: 12,
+					won: 1,
+					todo: 12,
+					sale: 567
+				},
+				{
+					image: lelaHarris,
+					name: "Lela Harris",
+					deals: 8,
+					won: 2,
+					todo: 6,
+					sale: 465
+				}
+			]
+		}
 	},
 ] 
 export default users;
