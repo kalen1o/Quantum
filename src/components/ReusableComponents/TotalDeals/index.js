@@ -15,7 +15,7 @@ import dots from '../../../icons/dots.svg';
 const useStyles = theme => ({
 	root: {
 		display: "inline-block",
-		width: '45%',
+		maxWidth: '50%',
 	},
 	spacer: {
 		flex: "1 1 100%"
@@ -43,6 +43,7 @@ const useStyles = theme => ({
 		fontWeight: 900
 	},
 	nameWrapper: {
+		width: "100%",
 		display: "flex",
 		justifyContent: "space-between",
 		alignItems: "center",

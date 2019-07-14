@@ -34,10 +34,10 @@ class CirclePieDiagram extends Component {
 					</button>
 				</div>
 				<div style={this.state.open ? {display: "block"} : {display: "none"}}>
-					<PieChart width={600} height={300} onMouseEnter={this.onPieEnter}>
+					<PieChart width={590} height={300} onMouseEnter={this.onPieEnter}>
 						<Pie
 						data={this.props.data} 
-						cx={300} 
+						cx={275} 
 						cy={125} 
 						innerRadius={60}
 						outerRadius={80} 

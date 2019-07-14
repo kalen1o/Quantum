@@ -11,6 +11,7 @@ import Login from './screens/Login';
 import CommerceDashboard from './screens/CommerceDashboard';
 import AnalyticsDashboard from './screens/AnalyticsDashboard';
 import AllDeals from './screens/AllDeals';
+import CreateDeal from './screens/CreateDeal';
 
 import {Provider, connect}   from 'react-redux';
 import {createStore} from 'redux';
@@ -49,6 +50,7 @@ class App extends Component {
               <Route path="/commerce-dashboard" render = { (props) => <CommerceDashboard {...props} user={user} /> } exact />
               <Route path="/analytics-dashboard" render = { (props) => <AnalyticsDashboard {...props} user={user} /> } exact />
               <Route path="/deals-dashboard" render = { (props) => <AllDeals {...props} user={user} /> } exact />
+              <Route path="/create-deal-dashboard" render = { (props) => <CreateDeal {...props} user={user} /> } exact />
             </Switch>
           </div>
         </div>

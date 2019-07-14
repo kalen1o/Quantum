@@ -130,7 +130,6 @@ class SideBar extends Component {
 	}
 
 	render() {
-		console.log(this.props, 'here')
 		let style = this.props.open ? {minWidth: "255px"} : {width: "80px"}
 		let handleClick = !this.props.open ? this.props.onClickOpen : null;
 		return (

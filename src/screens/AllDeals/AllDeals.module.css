@@ -1,5 +1,42 @@
 .h1 {
-	margin: 20px 0;
+	margin: 20px 0 50px;
 	font-weight: 300;
 	color: #808080;
+}
+
+.card {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	display: flex;
+}
+
+.column {
+	width: 20%;
+	border-right: 2px solid #f5f5f5;
+}
+
+.column-element {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	font-size: 13px;
+	border-bottom: 2px solid #f5f5f5;
+	border-left: 2px solid transparent;
+}
+
+.active {
+	border-left: 2px solid #1875F0;
+}
+
+.btn {
+	width: 100%;
+	padding: 20px;
+	background: #1875F0;
+	font-weight: 900;
+	font-size: 12px;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+	border-radius: 4px;
 }

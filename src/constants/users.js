@@ -356,7 +356,51 @@ const users = [
 					sale: 465
 				}
 			]
-		}
+		},
+		allDeals: [
+			{
+				title: "The Universe Through A Child S Eyes",
+				contact: "Aiden Day",
+				company: "American Express UK",
+				status: "INITIAL CONTACT",
+				sales: 834.4
+			},
+			{
+				title: "Astronomy Or Astrology",
+				contact: "Lee Crawford",
+				company: "Admiral Group plc",
+				status: "OFFER MADE",
+				sales: 342.86
+			},
+			{
+				title: "Pictures In The Sky",
+				contact: "Tony Walsh",
+				company: "McDonald's Ltd",
+				status: "NEGOTIATION",
+				sales: 392.26
+			},
+			{
+				title: "Shooting Stars",
+				contact: "Ronald Gonzales",
+				company: "Marriott Hotels Ltd",
+				status: "INCOMING REQUEST",
+				sales: 729.63
+			},
+			{
+				title: "Moon Fever",
+				contact: "Wesley Campbell",
+				company: "Volkswagen",
+				status: "NEGOTIATION",
+				sales: 25.27
+			},
+			{
+				title: "Space The Final Frontier",
+				contact: "Amelia Tate",
+				company: "Exxon Mobil",
+				status: "CONTACT",
+				sales: 145.01
+			},
+		]
 	},
 	{
 		login: 'tonyalvarez@gmail.com',
@@ -692,7 +736,65 @@ const users = [
 					sale: 465
 				}
 			]
-		}
+		},
+		allDeals: [
+			{
+				title: "The Universe Through A Child S Eyes",
+				contact: "Aiden Day",
+				company: "American Express UK",
+				status: "INITIAL CONTACT",
+				sales: 834.4
+			},
+			{
+				title: "Astronomy Or Astrology",
+				contact: "Lee Crawford",
+				company: "Admiral Group plc",
+				status: "OFFER MADE",
+				sales: 342.86
+			},
+			{
+				title: "Pictures In The Sky",
+				contact: "Tony Walsh",
+				company: "McDonald's Ltd",
+				status: "NEGOTIATION",
+				sales: 392.26
+			},
+			{
+				title: "Shooting Stars",
+				contact: "Ronald Gonzales",
+				company: "Marriott Hotels Ltd",
+				status: "INCOMING REQUEST",
+				sales: 729.63
+			},
+			{
+				title: "Moon Fever",
+				contact: "Wesley Campbell",
+				company: "Volkswagen",
+				status: "NEGOTIATION",
+				sales: 25.27
+			},
+			{
+				title: "Space The Final Frontier",
+				contact: "Amelia Tate",
+				company: "Exxon Mobil",
+				status: "CONTACT",
+				sales: 145.01
+			},
+			{
+				title: "Incoming requests",
+				contact: "Aiden Day",
+				company: "American Express UK",
+				status: "INITIAL CONTACT",
+				sales: 834.4
+			},
+			{
+				title: "Creating Remarkable Poster Prints ...",
+				contact: "Lee Crawford",
+				company: "Admiral Group plc",
+				status: "OFFER MADE",
+				sales: 342.86
+			},
+		]
 	},
 	{
 		login: 'katemiddleton@gmail.com',
@@ -1028,7 +1130,51 @@ const users = [
 					sale: 465
 				}
 			]
-		}
+		},
+		allDeals: [
+			{
+				title: "The Universe Through A Child S Eyes",
+				contact: "Aiden Day",
+				company: "American Express UK",
+				status: "INITIAL CONTACT",
+				sales: 834.4
+			},
+			{
+				title: "Astronomy Or Astrology",
+				contact: "Lee Crawford",
+				company: "Admiral Group plc",
+				status: "OFFER MADE",
+				sales: 342.86
+			},
+			{
+				title: "Pictures In The Sky",
+				contact: "Tony Walsh",
+				company: "McDonald's Ltd",
+				status: "NEGOTIATION",
+				sales: 392.26
+			},
+			{
+				title: "Shooting Stars",
+				contact: "Ronald Gonzales",
+				company: "Marriott Hotels Ltd",
+				status: "INCOMING REQUEST",
+				sales: 729.63
+			},
+			{
+				title: "Moon Fever",
+				contact: "Wesley Campbell",
+				company: "Volkswagen",
+				status: "NEGOTIATION",
+				sales: 25.27
+			},
+			{
+				title: "Space The Final Frontier",
+				contact: "Amelia Tate",
+				company: "Exxon Mobil",
+				status: "CONTACT",
+				sales: 145.01
+			},
+		]
 	},
 	{
 		login: 'ronaldhenry@gmail.com',
@@ -1364,7 +1510,51 @@ const users = [
 					sale: 465
 				}
 			]
-		}
+		},
+		allDeals: [
+			{
+				title: "The Universe Through A Child S Eyes",
+				contact: "Aiden Day",
+				company: "American Express UK",
+				status: "INITIAL CONTACT",
+				sales: 834.4
+			},
+			{
+				title: "Astronomy Or Astrology",
+				contact: "Lee Crawford",
+				company: "Admiral Group plc",
+				status: "OFFER MADE",
+				sales: 342.86
+			},
+			{
+				title: "Pictures In The Sky",
+				contact: "Tony Walsh",
+				company: "McDonald's Ltd",
+				status: "NEGOTIATION",
+				sales: 392.26
+			},
+			{
+				title: "Shooting Stars",
+				contact: "Ronald Gonzales",
+				company: "Marriott Hotels Ltd",
+				status: "INCOMING REQUEST",
+				sales: 729.63
+			},
+			{
+				title: "Moon Fever",
+				contact: "Wesley Campbell",
+				company: "Volkswagen",
+				status: "NEGOTIATION",
+				sales: 25.27
+			},
+			{
+				title: "Space The Final Frontier",
+				contact: "Amelia Tate",
+				company: "Exxon Mobil",
+				status: "CONTACT",
+				sales: 145.01
+			},
+		]
 	},
 ] 
 export default users;
