@@ -19,10 +19,14 @@
 .column-element {
 	display: flex;
 	align-items: center;
-	padding: 20px;
+	padding: 20px 0 20px 20px;
 	font-size: 13px;
 	border-bottom: 2px solid #f5f5f5;
 	border-left: 2px solid transparent;
+}
+
+.column-element:first-child {
+	padding: 20px;
 }
 
 .active {
@@ -31,7 +35,7 @@
 
 .btn {
 	width: 100%;
-	padding: 20px;
+	padding: 20px 0;
 	background: #1875F0;
 	font-weight: 900;
 	font-size: 12px;

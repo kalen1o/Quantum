@@ -1,0 +1,22 @@
+.card {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	margin-bottom: 20px;
+	width: 30%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #f5f5f5;
+	padding: 15px 30px;
+}
+
+.header button {
+	border: none;
+	outline: none;
+	background: transparent;
+	padding: 0;
+}

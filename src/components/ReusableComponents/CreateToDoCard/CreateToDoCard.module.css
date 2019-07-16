@@ -1,0 +1,65 @@
+.card {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	margin-bottom: 20px;
+	width: 60%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #f5f5f5;
+	padding: 15px 30px;
+}
+
+.header button {
+	border: none;
+	outline: none;
+	background: transparent;
+	padding: 0;
+}
+
+.card-info {
+	transition: height 0.3s;
+	overflow: hidden;
+}
+
+.big-input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.small-input {
+	position: relative;
+	width: 20%;
+	margin-bottom: 20px;
+}
+
+.small-input-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.btnAdd, .btnCancel {
+	width: 20%;
+    padding: 20px 0;
+    background: transparent;
+    font-weight: 900;
+    font-size: 12px;
+    color: #b3b3b3;
+    border: 2px solid #F5F5F5;
+    outline: none;
+    border-radius: 4px;
+}
+
+.btnCancel {
+	border: none;
+	margin-right: 20px;
+}

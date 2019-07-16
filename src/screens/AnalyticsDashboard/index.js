@@ -46,7 +46,7 @@ class AnalyticsDashboard extends Component {
 				</div>
 				<div className={classes["task-card-wrapper"]}>
 					{this.props.user.analyticsDashboard.tasks.map(task => (
-						<TaskCard data={task} />
+						<TaskCard data={task} key={task.label} />
 					))}
 				</div>
 				<div className={classes["tables-wrapper"]}>

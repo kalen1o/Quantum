@@ -36,6 +36,7 @@ class CirclePieDiagram extends Component {
 				<div style={this.state.open ? {display: "block"} : {display: "none"}}>
 					<PieChart width={590} height={300} onMouseEnter={this.onPieEnter}>
 						<Pie
+						// dataKey="traffic"
 						data={this.props.data} 
 						cx={275} 
 						cy={125} 
@@ -45,14 +46,14 @@ class CirclePieDiagram extends Component {
 						paddingAngle={0}
 						>
 						{
-							this.props.data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]}/>)
+							this.props.data.map((entry, index) => <Cell fill={COLORS[index % COLORS.length]} key={Math.random()} />)
 						}
 						</Pie>
 						
 					</PieChart>
 					<div className={classes["legend-wrapper"]}>
 						{
-							this.props.data.map((entry, index) => <Legend data={entry} color={COLORS[index % COLORS.length]} />)
+							this.props.data.map((entry, index) => <Legend data={entry} color={COLORS[index % COLORS.length]}  key={Math.random()}  />)
 						}
 					</div>
 				</div>

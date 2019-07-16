@@ -21,15 +21,15 @@ class InfoBoard extends Component {
 					{this.props.data.label}
 				</div>
 				{visibleInfo.map(info => (
-					<div className={classes.info}>
+					<div className={classes.info} key={Math.random()}>
 						{info}
 					</div>
 				))}
 				<div className={classes["invisible-board-wrapper"]} style={this.state.open ? {height: "auto"} : {height: 0}}>
 					{
 						invisibleInfo ?
-						invisibleInfo.map(info => (
-							<div className={classes.info}>
+						invisibleInfo.map((info, index) => (
+							<div className={classes.info} key={Math.random()}>
 								{info}
 							</div>
 						)) :

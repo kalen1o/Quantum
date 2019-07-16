@@ -88,7 +88,7 @@ class TotalDeals extends Component {
 		<Table className={classes.table} style={this.state.open ? {display: "table-row"} : {display: "none"}}>
 			<TableHead>
 			<TableRow>
-				{this.props.labels.map(label => <TableCell className={classes.th}>{label}</TableCell>)}
+				{this.props.labels.map(label => <TableCell className={classes.th} key={label}>{label}</TableCell>)}
 			</TableRow>
 			</TableHead>
 			<TableBody>

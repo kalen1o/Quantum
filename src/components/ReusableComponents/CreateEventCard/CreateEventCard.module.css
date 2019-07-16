@@ -1,0 +1,39 @@
+.card {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+.event-title-wrapper {
+	width: 50%;
+}
+
+.event-flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.small-wrapper {
+	position: relative;
+	width: 15%;
+	max-width: 170px;
+}
+
+.btnSave, .btnCancel {
+	width: 15%;
+	padding: 20px 0;
+	background: #1875F0;
+	font-weight: 900;
+	font-size: 12px;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+}
+
+.btnCancel {
+	background: transparent;
+	color: #b3b3b3;
+}

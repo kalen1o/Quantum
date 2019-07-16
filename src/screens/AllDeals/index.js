@@ -50,7 +50,12 @@ class AllDeals extends Component {
 		this.setState({active: event.target.innerText})
 	}
 
+	handleCreateClick = () => {
+		this.props.history.push("/create-deal-dashboard")
+	}
+
 	render() {
+		console.log(this.props)
 		return (
 			<div className="content">
 				<WayBar label="Dashboard" array={way} />
@@ -58,7 +63,7 @@ class AllDeals extends Component {
 				<div className={classes.card}>
 					<div className={classes.column}>
 						<div className={classes["column-element"]}>
-							<button type="button" className={classes.btn}>CREATE DEAL</button>
+							<button type="button" className={classes.btn} onClick={this.handleCreateClick}>CREATE DEAL</button>
 						</div>
 						{columnElem.map(elem => (
 							<div className={`${classes["column-element"]} ${this.state.active === elem.text ? classes.active : ''}`} onClick={this.handleClickColumn} key={elem.text}>

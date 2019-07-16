@@ -3,3 +3,10 @@
 	font-weight: 300;
 	color: #808080;
 }
+
+.cards-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
