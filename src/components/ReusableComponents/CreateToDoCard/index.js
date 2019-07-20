@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './CreateToDoCard.module.css';
 
-import { Formik, Form, Field } from "formik";
+import { Formik, Form } from "formik";
 import DefaultInput from '../../ReusableComponents/DefaultInput';
 import DefaultSelect from '../../ReusableComponents/DefaultSelect';
 import Editor from '../../ReusableComponents/Editor';
@@ -9,6 +9,8 @@ import arrowUp from '../../../icons/arrow_up.svg';
 import today from '../../../icons/today.svg';
 import accountCircle from '../../../icons/account_circle.svg';
 import { CreateToDoSchema } from '../../../config/yup';
+
+import HeaderCard from '../HeaderCard';
 
 class CreateToDoCard extends Component {
 	state = {
@@ -23,12 +25,7 @@ class CreateToDoCard extends Component {
 	render() {
 		return (
 			<div className={classes.card}>
-				<div className={classes.header}>
-					<h6>Add To Do</h6>
-					<button type="button" onClick={this.handleClick} style={this.state.open ? {transform: "rotate(0deg)"} : {transform: "rotate(180deg)"}}>
-						<img src={arrowUp} alt={arrowUp} />
-					</button>
-				</div>
+				<HeaderCard title="Add To Do" onClick={this.handleClick} icon={arrowUp} open={this.state.open} />
 				<Formik
 					initialValues={{
 						name: "",

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import classes from './RevenueCard.module.css';
 import dots from '../../../icons/dots.svg';
 
+import HeaderCard from '../HeaderCard';
+
 const Info = (props) => (
 	<div className={classes.info}>
 		<h5 className={classes.h5}>$ {props.revenue}</h5>
@@ -24,12 +26,7 @@ class RevenueCard extends Component {
 		let height = this.state.open ?  140 : 0 ;
 		return (
 			<div className={classes.card}>
-				<div className={classes.header}>
-					<h6>Total Revenue</h6>
-					<button onClick={this.handleClick} type="button">
-						<img src={dots} alt={dots} />
-					</button>
-				</div>
+				<HeaderCard title="Total Revenue" onClick={this.handleClick} icon={dots} />
 				<div className={classes.wrapper} style={this.state.open ? {height: "auto"} : {height: 0}}>
 					<div className={classes["circle-wrapper"]}>
 						<div 

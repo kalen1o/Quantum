@@ -1,49 +1,37 @@
 import React, { Component } from 'react';
-import classes from './AllDeals.module.css';
+import classes from './Clients.module.css';
 
 import WayBar from '../../components/ReusableComponents/WayBar';
-import DealsTable from '../../components/ReusableComponents/DealsTable';
+import ClientsTable from '../../components/ReusableComponents/ClientsTable';
 
 const way = [
 	{
-		text: "All Deals", url: "/deals-dashboard"
+		text: "Clients", url: "/clients"
 	}
 ]
 
 const columnElem = [
 	{
-		text: "All deals",
+		text: "All contacts",
 		color: "transparent"
 	},
 	{
-		text: "Incoming request",
-		color: "#3AA4D2"
+		text: "VIP Clients",
+		color: "transparent"
 	},
 	{
-		text: "Initial Contact",
-		color: "#1875F0"
+		text: "New Clients",
+		color: "transparent"
 	},
 	{
-		text: "Offer Made",
-		color: "#F9AD3D"
-	},
-	{
-		text: "Negotiation",
-		color: "#5553CE"
-	},
-	{
-		text: "Contact",
-		color: "#9F00FF"
-	},
-	{
-		text: "Won Deals",
-		color: "#34CB49"
-	},
+		text: "Top Sale",
+		color: "transparent"
+	}
 ]
 
-class AllDeals extends Component {
+class Clients extends Component {
 	state = {
-		active: "All deals"
+		active: "All contacts"
 	}
 
 	handleClickColumn = (event) => {
@@ -53,16 +41,15 @@ class AllDeals extends Component {
 	handleCreateClick = () => {
 		this.props.history.push("/create-deal-dashboard")
 	}
-
 	render() {
 		return (
 			<div className="content">
-				<WayBar label="Dashboard" array={way} />
-				<h1 className={classes.h1}>All Deals</h1>
+				<WayBar label="Widgets" array={way} />
+				<h1 className={classes.h1}>Clients</h1>
 				<div className={classes.card}>
 					<div className={classes.column}>
 						<div className={classes["column-element"]}>
-							<button type="button" className={classes.btn} onClick={this.handleCreateClick}>CREATE DEAL</button>
+							<button type="button" className={classes.btn} onClick={this.handleCreateClick}>ADD CLIENT</button>
 						</div>
 						{columnElem.map(elem => (
 							<div className={`${classes["column-element"]} ${this.state.active === elem.text ? classes.active : ''}`} onClick={this.handleClickColumn} key={elem.text}>
@@ -78,11 +65,11 @@ class AllDeals extends Component {
 							</div>
 						))}
 					</div>
-					<DealsTable rows={this.props.user.allDeals} sort={this.state.active} />
+					<ClientsTable rows={this.props.user.clients} sort={this.state.active} />
 				</div>
 			</div>
 		)
 	}
 }
 
-export default AllDeals;
+export default Clients;

@@ -14,11 +14,18 @@
 	outline: none;
 }
 
+.input::placeholder {
+	font-size: 12px;
+}
+
 .is-invalid {
 	border: 2px solid red;
 }
 
 .error {
+	position: absolute;
+	top: 50px;
+	left: 20px;
 	font-size: 12px;
 	color: red;
 }

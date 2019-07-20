@@ -34,18 +34,19 @@ class Editor extends Component {
 		function autosize(){
 			var el = this;
 			setTimeout(function(){
-				el.style.cssText ='height: auto';
-			  	el.style.cssText = 'height:' + el.scrollHeight + 'px' ;
+				el.style.cssText +='height: auto';
+			  	el.style.cssText += 'height:' + el.scrollHeight + 'px' ;
 			},0);
 		  }
 	}
 
 	render() {
+		console.log(this.state)
 		return (
 			<div>
 				<div className={classes.editor}>
-					<img src={bold} alt={bold} onClick={this.handleBoldClick}/>
-					<img src={italic} alt={italic} onClick={this.handleItalicClick}/>
+					<img src={bold} alt={bold} onClick={this.handleBoldClick} style={this.state.bold ? {border: "2px solid #f5f5f5"} : {border: "2px solid transparent"}}/>
+					<img src={italic} alt={italic} onClick={this.handleItalicClick} style={this.state.italic ? {border: "2px solid #f5f5f5"} : {border: "2px solid transparent"}} />
 					<img src={insertLink} alt={insertLink} />
 					<img src={insertPhoto} alt={insertPhoto} />
 					<img src={listBulleted} alt={listBulleted} />
@@ -59,6 +60,10 @@ class Editor extends Component {
 					component="textarea"
 					placeholder="Text"
 					rows={this.props.rows}
+					style={{
+						fontWeight: this.state.bold ? "bold" : "normal",
+						fontStyle: this.state.italic ? "italic" : "normal"
+					}}
 				/>
 			</div>
 		)

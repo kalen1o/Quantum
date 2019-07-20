@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import classes from './CreateCompanyCard.module.css';
 
-import { Formik, Form, Field } from "formik";
+import { Formik, Form } from "formik";
 import DefaultInput from '../../ReusableComponents/DefaultInput';
 import DefaultSelect from '../../ReusableComponents/DefaultSelect';
 import arrowUp from '../../../icons/arrow_up.svg';
-import { CreateContactSchema } from '../../../config/yup';
+import { CreateCompanySchema } from '../../../config/yup';
+import HeaderCard from '../HeaderCard';
 
 class CreateCompanyCard extends Component {
 	state = {
@@ -21,12 +22,57 @@ class CreateCompanyCard extends Component {
 	render() {
 		return (
 			<div className={classes.card}>
-				<div className={classes.header}>
-					<h6>New Company</h6>
-					<button type="button" onClick={this.handleClick} style={this.state.open ? {transform: "rotate(0deg)"} : {transform: "rotate(180deg)"}}>
-						<img src={arrowUp} alt={arrowUp} />
-					</button>
-				</div>
+				<HeaderCard title="New Company" onClick={this.handleClick} icon={arrowUp} open={this.state.open} />
+				<Formik
+					initialValues={{
+						companyName: "",
+						phone: "",
+						phoneType: "PHONE WORK",
+						email: "",
+						emailType: "EMAIL WORK",
+						site: "",
+						address: ""
+					}}
+					validationSchema={CreateCompanySchema}
+					onSubmit={(values, {resetForm}) => {
+						console.log(values)
+						resetForm({
+							companyName: "",
+							phone: "",
+							phoneType: "PHONE WORK",
+							email: "",
+							emailType: "EMAIL WORK",
+							site: "",
+							address: ""
+						})
+					}}
+					render={({values, errors, touched, setFieldValue}) => {
+						return (
+							<Form>
+								<div className={classes["card-info"]} style={this.state.open ? {height: "auto", padding: "25px"} : {height: "0", padding: "0"}}>
+									<DefaultInput name="companyName" placeholder="Company Name" classDiv={classes["big-input"]} errors={errors} touched={touched} />
+									<div className={classes["small-input-wrapper"]}>
+										<DefaultInput name="phone" placeholder="Phone Number" classDiv={classes["small-input"]} errors={errors} touched={touched} />
+										<DefaultSelect name="phoneType" value={values.phoneType} onChange={setFieldValue} type="1" classDiv={classes["small-input"]} errors={errors} touched={touched} >
+											<option value="PHONE WORK">PHONE WORK</option>
+											<option value="PHONE HOME">PHONE HOME</option>
+										</DefaultSelect>
+									</div>
+									<div className={classes["small-input-wrapper"]}>
+										<DefaultInput name="email" placeholder="Email" classDiv={classes["small-input"]} errors={errors} touched={touched} />
+										<DefaultSelect name="emailType" value={values.emailType} onChange={setFieldValue} type="1" classDiv={classes["small-input"]} errors={errors} touched={touched} >
+											<option value="EMAIL WORK">EMAIL WORK</option>
+											<option value="EMAIL HOME">EMAIL HOME</option>
+										</DefaultSelect>
+									</div>
+									<DefaultInput name="site" placeholder="Site" classDiv={classes["big-input"]} errors={errors} touched={touched} />
+									<DefaultInput name="address" placeholder="Address" classDiv={classes["big-input"]} errors={errors} touched={touched} />
+									<button type="submit" className={classes.btn}>ADD CONTACT</button>
+								</div>
+							</Form>
+						)
+					}}
+				/>
 			</div>
 		)
 	}

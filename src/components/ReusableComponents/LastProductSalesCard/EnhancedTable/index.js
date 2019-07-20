@@ -1,8 +1,7 @@
 import React from "react";
-import { lighten, makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
@@ -14,6 +13,8 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Divider from '@material-ui/core/Divider';
 import DeleteIcon from "@material-ui/icons/Delete";
 import dots from '../../../../icons/dots.svg';
+
+import StyledTableCell from '../../StyledTableCell';
 
 function desc(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -74,16 +75,17 @@ function EnhancedTableHead(props) {
   return (
     <TableHead>
       <TableRow>
-        <TableCell padding="checkbox">
+        <StyledTableCell padding="none">
           <Checkbox
+            color="primary"
             indeterminate={numSelected > 0 && numSelected < rowCount}
             checked={numSelected === rowCount}
             onChange={onSelectAllClick}
             inputProps={{ "aria-label": "Select all desserts" }}
           />
-        </TableCell>
+        </StyledTableCell>
         {headRows.map(row => (
-          <TableCell
+          <StyledTableCell
             key={row.id}
             align="left"
             padding={row.disablePadding ? "none" : "default"}
@@ -96,7 +98,7 @@ function EnhancedTableHead(props) {
             >
               {row.label}
             </TableSortLabel>
-          </TableCell>
+          </StyledTableCell>
         ))}
       </TableRow>
     </TableHead>
@@ -111,8 +113,8 @@ const useToolbarStyles = makeStyles(theme => {
   highlight:
     theme.palette.type === "light"
       ? {
-          color: theme.palette.secondary.main,
-          backgroundColor: lighten(theme.palette.secondary.light, 0.85)
+          // color: theme.palette.secondary.main,
+          backgroundColor: 'rgba(24, 117, 240, .7)'
         }
       : {
           color: theme.palette.text.primary,
@@ -273,34 +275,35 @@ export default function EnhancedTable(props) {
                       key={row.image}
                       selected={isItemSelected}
                     >
-                      <TableCell padding="checkbox">
+                      <StyledTableCell padding="checkbox">
                         <Checkbox
+                          color="primary"
                           checked={isItemSelected}
                           inputProps={{ "aria-labelledby": labelId }}
                         />
-                      </TableCell>
-                      <TableCell
+                      </StyledTableCell>
+                      <StyledTableCell
                         component="th"
                         id={labelId}
                         scope="row"
                         padding="none"
                       >
                         <img src={row.image} alt={row.image} />
-                      </TableCell>
-                      <TableCell align="left">{row.product}</TableCell>
-                      <TableCell align="left">{row.timeOrder}</TableCell>
-                      <TableCell align="left">{row.number}</TableCell>
-                      <TableCell align="left">{row.price}</TableCell>
-                      <TableCell align="left">{row.quantity}</TableCell>
-                      <TableCell align="left">{row.totalPrice}</TableCell>
-                      <TableCell align="left">{row.customer}</TableCell>
-                      <TableCell align="left">VIEW ORDER</TableCell>
+                      </StyledTableCell>
+                      <StyledTableCell align="left">{row.product}</StyledTableCell>
+                      <StyledTableCell align="left">{row.timeOrder}</StyledTableCell>
+                      <StyledTableCell align="left">{row.number}</StyledTableCell>
+                      <StyledTableCell align="left">{row.price}</StyledTableCell>
+                      <StyledTableCell align="left">{row.quantity}</StyledTableCell>
+                      <StyledTableCell align="left">{row.totalPrice}</StyledTableCell>
+                      <StyledTableCell align="left">{row.customer}</StyledTableCell>
+                      <StyledTableCell align="left">VIEW ORDER</StyledTableCell>
                     </TableRow>
                   );
                 })}
               {emptyRows > 0 && (
                 <TableRow style={{ height: 49 * emptyRows }}>
-                  <TableCell colSpan={6} />
+                  <StyledTableCell colSpan={6} />
                 </TableRow>
               )}
             </TableBody>

@@ -12,9 +12,8 @@ import TablePagination from '@material-ui/core/TablePagination';
 
 import { Formik, Form, Field } from "formik";
 
-import accountCircle from '../../../icons/account_circle.svg'; 
-import restore from '../../../icons/restore.svg';
-import compareArrows from '../../../icons/compare_arrows.svg';
+import pencil from '../../../icons/pencil.svg'; 
+import folder from '../../../icons/folder.svg';
 import deleteTrash from '../../../icons/delete.svg';
 import search from '../../../icons/search.svg';
 import settings from '../../../icons/settings.svg';
@@ -46,11 +45,11 @@ function getSorting(order, orderBy) {
 }
 
 const headRows = [
-  { id: 'title', numeric: false, disablePadding: true, label: 'Deal Title' },
-  { id: 'contact', numeric: false, disablePadding: false, label: 'Main Contact' },
+  { id: 'contact', numeric: false, disablePadding: false, label: 'Contact' },
+  { id: 'email', numeric: false, disablePadding: false, label: 'Email' },
+  { id: 'phone', numeric: false, disablePadding: false, label: 'Phone' },
+  { id: 'title', numeric: false, disablePadding: false, label: 'Deal Title' },
   { id: 'company', numeric: false, disablePadding: false, label: 'Company' },
-  { id: 'status', numeric: false, disablePadding: false, label: 'Deal Status' },
-  { id: 'sales', numeric: true, disablePadding: false, label: 'Sales' },
 ];
 
 const useTableStyles = makeStyles(theme => ({
@@ -67,14 +66,14 @@ function EnhancedTableHead(props) {
       <TableRow>
         <StyledTableCell />
         {headRows.map(row => (
-          <StyledTableCell
-		  	    className={classes.head}
-            key={row.id}
-            padding={row.disablePadding ? 'none' : 'default'}
-            sortDirection={orderBy === row.id ? order : false}
-          >
+			<StyledTableCell
+				className={classes.head}
+				key={row.id}
+				padding={row.disablePadding ? 'none' : 'default'}
+				sortDirection={orderBy === row.id ? order : false}
+			>
               {row.label}
-          </StyledTableCell>
+          	</StyledTableCell>
         ))}
       </TableRow>
     </TableHead>
@@ -153,16 +152,15 @@ const EnhancedTableToolbar = props => {
 		>
 			<div className={classes.action}>
 				<Checkbox
-          color="primary"
+          			color="primary"
 					indeterminate={numSelected > 0 && numSelected < rowCount}
 					checked={numSelected === rowCount}
 					onChange={onSelectAllClick}
 					inputProps={{ 'aria-label': 'Select all desserts' }}
 				/>
-				<img src={accountCircle} alt={accountCircle} className={classes.img} />
-				<img src={restore} alt={restore} className={classes.img} />
-				<img src={compareArrows} alt={compareArrows} className={classes.img} />
+				<img src={pencil} alt={pencil} className={classes.img} />
 				<img src={deleteTrash} alt={deleteTrash} className={classes.img} />
+				<img src={folder} alt={folder} className={classes.img} />
 			</div>
 			<div className={classes.input}>
 			<Formik
@@ -216,7 +214,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function DealsTable(props) {
+function ClientsTable(props) {
   const classes = useStyles();
   const [order] = React.useState('asc');
   const [orderBy] = React.useState('calories');
@@ -225,13 +223,13 @@ function DealsTable(props) {
   const [dense] = React.useState(false);
   const [rowsPerPage, setRowsPerPage] = React.useState(6);
   let rows = props.rows.filter(row => {
-    if(props.sort === 'All deals') return row.status
-    return row.status === props.sort.toUpperCase()
+    if(props.sort === 'All contacts') return row.contact
+    return row.status === props.sort
   })
 
   function handleSelectAllClick(event) {
     if (event.target.checked) {
-      const newSelecteds = rows.map(n => n.title);
+      const newSelecteds = rows.map(n => n.contact);
       setSelected(newSelecteds);
       return;
     }
@@ -296,22 +294,16 @@ function DealsTable(props) {
               {stableSort(rows, getSorting(order, orderBy))
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => {
-                  const isItemSelected = isSelected(row.title);
+                  const isItemSelected = isSelected(row.contact);
                   const labelId = `enhanced-table-checkbox-${index}`;
-                  let color = row.status === "INITIAL CONTACT" ? "#1875F0" :
-                    row.status === "OFFER MADE" ? "#F9AD3D" :
-                    row.status === "NEGOTIATION" ? "#5553CE" :
-                    row.status === "INCOMING REQUEST" ? "#3AA4D2" :
-                    row.status === "CONTACT" ? "#9F00FF" :
-                    "#34CB49"
                   return (
                     <TableRow
                       hover
-                      onClick={event => handleClick(event, row.title)}
+                      onClick={event => handleClick(event, row.contact)}
                       role="checkbox"
                       aria-checked={isItemSelected}
                       tabIndex={-1}
-                      key={row.title}
+                      key={row.contact}
                       selected={isItemSelected}
                     >
                       <StyledTableCell padding="checkbox">
@@ -322,16 +314,12 @@ function DealsTable(props) {
                         />
                       </StyledTableCell>
                       <StyledTableCell component="th" id={labelId} scope="row" padding="none" className={classes.cell}>
-                        {row.title}
+                        {row.contact}
                       </StyledTableCell>
-                      <StyledTableCell className={classes.cell}>{row.contact}</StyledTableCell>
+                      <StyledTableCell className={classes.cell}>{row.email}</StyledTableCell>
+                      <StyledTableCell className={classes.cell}>{row.phone}</StyledTableCell>
+                      <StyledTableCell className={classes.cell}>{row.title}</StyledTableCell>
                       <StyledTableCell className={classes.cell}>{row.company}</StyledTableCell>
-                      <StyledTableCell className={classes.cell}>
-                        <span className={classes.status} style={{background: color}}>
-                          {row.status}
-                        </span>
-                      </StyledTableCell>
-                      <StyledTableCell className={classes.cell}>$ {row.sales}</StyledTableCell>
                     </TableRow>
                   );
                 })}
@@ -363,4 +351,4 @@ function DealsTable(props) {
   );
 }
 
-export default DealsTable;
+export default ClientsTable;

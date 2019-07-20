@@ -6,6 +6,7 @@ import CreateEventCard from '../../components/ReusableComponents/CreateEventCard
 import CreateContactCard from '../../components/ReusableComponents/CreateContactCard';
 import CreateToDoCard from '../../components/ReusableComponents/CreateToDoCard';
 import CreateCompanyCard from '../../components/ReusableComponents/CreateCompanyCard';
+import ScheduleCard from '../../components/ReusableComponents/ScheduleCard';
 
 const way = [
 	{
@@ -24,6 +25,7 @@ class CreateDeal extends Component {
 					<CreateContactCard />
 					<CreateToDoCard />
 					<CreateCompanyCard />
+					<ScheduleCard />
 				</div>
 			</div>
 		)

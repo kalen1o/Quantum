@@ -1,8 +1,6 @@
 import React from 'react';
 import classes from './DefaultSelect.module.css';
 
-import { withFormik, Field } from "formik";
-
 const DefaultSelect = (props) => {
 	return (
 		<div className={props.classDiv}>

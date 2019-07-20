@@ -26,20 +26,20 @@ export const CreateEventSchema = Yup.object().shape({
 })
 
 export const CreateContactSchema =  Yup.object().shape({
-	name: Yup.string()
+	fullname: Yup.string()
 		.required("Required")
 		.matches(/^[a-zA-Z]+$/, {
 			message: 'Please specify a valid first name.'
 		}),
 	company: Yup.string()
 		.required("Required"),
-	phone: Yup.string()
+	phoneContact: Yup.string()
 		.matches(/^[0-9]*$/, {
 			message: 'Please specify a phone number.'
 		})
 		.min(10, "Please specify a phone number.")
 		.required("Required"),
-	email: Yup.string()
+	emailContact: Yup.string()
 		.email("Please specify a valid email.")
 		.required("Required"),
 	social: Yup.string()
@@ -56,4 +56,23 @@ export const CreateToDoSchema = Yup.object().shape({
 		.required("Required"),
 	date: Yup.string()
 		.required("Required"),
+})
+
+export const CreateCompanySchema = Yup.object().shape({
+	companyName: Yup.string()
+		.required("Required"),
+	phone: Yup.string()
+		.matches(/^[0-9]*$/, {
+			message: 'Please specify a phone number.'
+		})
+		.min(10, "Please specify a phone number.")
+		.required("Required"),
+	email: Yup.string()
+		.email("Please specify a valid email.")
+		.required("Required"),
+	site: Yup.string()
+		.required("Required")
+		.url("Please specify a valid website."),
+	address: Yup.string()
+	.required("Required"),
 })

@@ -5,7 +5,7 @@ import { Field } from "formik";
 
 const DefaultInput = (props) => {
 	return (
-		<div className={props.classDiv}>
+		<div className={props.classDiv} style={{position: "relative", marginBottom: "20px"}}>
 			{
 				props.icon ?
 					<img src={props.icon} alt={props.icon} className={classes.icon} /> : null

@@ -400,6 +400,106 @@ const users = [
 				status: "CONTACT",
 				sales: 145.01
 			},
+		],
+		clients: [
+			{
+				contact: "Jose Cortez",
+				email: "torphy_shanon@gmail.com",
+				phone: "765-889-1804",
+				title: "Space The Final Frontier",
+				company: "American Express UK",
+				status: "VIP Clients"
+			},
+			{
+				contact: "Bill Buchanan",
+				email: "bill-buch@yahoo.com",
+				phone: "967-527-9383",
+				title: "Telescopes 101",
+				company: "Admiral Group plc",
+				status: "Top Sale"
+			},
+			{
+				contact: "Effie Guzman",
+				email: "effie-guz@yahoo.com",
+				phone: "829-779-4544",
+				title: "The Amazing Hubble",
+				company: "Exxon Mobil",
+				status: "New Clients"
+			},
+			{
+				contact: "Rodney Boone",
+				email: "rodne@lind.co.uk",
+				phone: "174-612-7499",
+				title: "Asteroids",
+				company: "Royal Dutch Shell",
+				status: "VIP Clients"
+			},
+			{
+				contact: "Barbara Maxwell",
+				email: "barbara-maxwell@hotmail.com",
+				phone: "783-320-7752",
+				title: "Telescopes 101",
+				company: "American Express UK",
+				status: "Top Sale"
+			},
+			{
+				contact: "Ellen Thornton",
+				email: "thornton@crooks.com",
+				phone: "926-605-0520",
+				title: "The Night Sky",
+				company: "Volkswagen",
+				status: "New Clients"
+			},
+		],
+		companies: [
+			{
+				contact: "Jose Cortez",
+				email: "torphy_shanon@gmail.com",
+				phone: "765-889-1804",
+				title: "Space The Final Frontier",
+				company: "American Express UK",
+				status: "VIP Companies"
+			},
+			{
+				contact: "Bill Buchanan",
+				email: "bill-buch@yahoo.com",
+				phone: "967-527-9383",
+				title: "Telescopes 101",
+				company: "Admiral Group plc",
+				status: "Top Companies"
+			},
+			{
+				contact: "Effie Guzman",
+				email: "effie-guz@yahoo.com",
+				phone: "829-779-4544",
+				title: "The Amazing Hubble",
+				company: "Exxon Mobil",
+				status: "New Companies"
+			},
+			{
+				contact: "Rodney Boone",
+				email: "rodne@lind.co.uk",
+				phone: "174-612-7499",
+				title: "Asteroids",
+				company: "Royal Dutch Shell",
+				status: "VIP Companies"
+			},
+			{
+				contact: "Barbara Maxwell",
+				email: "barbara-maxwell@hotmail.com",
+				phone: "783-320-7752",
+				title: "Telescopes 101",
+				company: "American Express UK",
+				status: "Top Companies"
+			},
+			{
+				contact: "Ellen Thornton",
+				email: "thornton@crooks.com",
+				phone: "926-605-0520",
+				title: "The Night Sky",
+				company: "Volkswagen",
+				status: "New Companies"
+			},
 		]
 	},
 	{
@@ -794,6 +894,106 @@ const users = [
 				status: "OFFER MADE",
 				sales: 342.86
 			},
+		],
+		clients: [
+			{
+				contact: "Jose Cortez",
+				email: "torphy_shanon@gmail.com",
+				phone: "765-889-1804",
+				title: "Space The Final Frontier",
+				company: "American Express UK",
+				status: "VIP Clients"
+			},
+			{
+				contact: "Bill Buchanan",
+				email: "bill-buch@yahoo.com",
+				phone: "967-527-9383",
+				title: "Telescopes 101",
+				company: "Admiral Group plc",
+				status: "Top Sale"
+			},
+			{
+				contact: "Effie Guzman",
+				email: "effie-guz@yahoo.com",
+				phone: "829-779-4544",
+				title: "The Amazing Hubble",
+				company: "Exxon Mobil",
+				status: "New Clients"
+			},
+			{
+				contact: "Rodney Boone",
+				email: "rodne@lind.co.uk",
+				phone: "174-612-7499",
+				title: "Asteroids",
+				company: "Royal Dutch Shell",
+				status: "VIP Clients"
+			},
+			{
+				contact: "Barbara Maxwell",
+				email: "barbara-maxwell@hotmail.com",
+				phone: "783-320-7752",
+				title: "Telescopes 101",
+				company: "American Express UK",
+				status: "Top Sale"
+			},
+			{
+				contact: "Ellen Thornton",
+				email: "thornton@crooks.com",
+				phone: "926-605-0520",
+				title: "The Night Sky",
+				company: "Volkswagen",
+				status: "New Clients"
+			},
+		],
+		companies: [
+			{
+				contact: "Jose Cortez",
+				email: "torphy_shanon@gmail.com",
+				phone: "765-889-1804",
+				title: "Space The Final Frontier",
+				company: "American Express UK",
+				status: "VIP Companies"
+			},
+			{
+				contact: "Bill Buchanan",
+				email: "bill-buch@yahoo.com",
+				phone: "967-527-9383",
+				title: "Telescopes 101",
+				company: "Admiral Group plc",
+				status: "Top Companies"
+			},
+			{
+				contact: "Effie Guzman",
+				email: "effie-guz@yahoo.com",
+				phone: "829-779-4544",
+				title: "The Amazing Hubble",
+				company: "Exxon Mobil",
+				status: "New Companies"
+			},
+			{
+				contact: "Rodney Boone",
+				email: "rodne@lind.co.uk",
+				phone: "174-612-7499",
+				title: "Asteroids",
+				company: "Royal Dutch Shell",
+				status: "VIP Companies"
+			},
+			{
+				contact: "Barbara Maxwell",
+				email: "barbara-maxwell@hotmail.com",
+				phone: "783-320-7752",
+				title: "Telescopes 101",
+				company: "American Express UK",
+				status: "Top Companies"
+			},
+			{
+				contact: "Ellen Thornton",
+				email: "thornton@crooks.com",
+				phone: "926-605-0520",
+				title: "The Night Sky",
+				company: "Volkswagen",
+				status: "New Companies"
+			},
 		]
 	},
 	{
@@ -1174,6 +1374,106 @@ const users = [
 				status: "CONTACT",
 				sales: 145.01
 			},
+		],
+		clients: [
+			{
+				contact: "Jose Cortez",
+				email: "torphy_shanon@gmail.com",
+				phone: "765-889-1804",
+				title: "Space The Final Frontier",
+				company: "American Express UK",
+				status: "VIP Clients"
+			},
+			{
+				contact: "Bill Buchanan",
+				email: "bill-buch@yahoo.com",
+				phone: "967-527-9383",
+				title: "Telescopes 101",
+				company: "Admiral Group plc",
+				status: "Top Sale"
+			},
+			{
+				contact: "Effie Guzman",
+				email: "effie-guz@yahoo.com",
+				phone: "829-779-4544",
+				title: "The Amazing Hubble",
+				company: "Exxon Mobil",
+				status: "New Clients"
+			},
+			{
+				contact: "Rodney Boone",
+				email: "rodne@lind.co.uk",
+				phone: "174-612-7499",
+				title: "Asteroids",
+				company: "Royal Dutch Shell",
+				status: "VIP Clients"
+			},
+			{
+				contact: "Barbara Maxwell",
+				email: "barbara-maxwell@hotmail.com",
+				phone: "783-320-7752",
+				title: "Telescopes 101",
+				company: "American Express UK",
+				status: "Top Sale"
+			},
+			{
+				contact: "Ellen Thornton",
+				email: "thornton@crooks.com",
+				phone: "926-605-0520",
+				title: "The Night Sky",
+				company: "Volkswagen",
+				status: "New Clients"
+			},
+		],
+		companies: [
+			{
+				contact: "Jose Cortez",
+				email: "torphy_shanon@gmail.com",
+				phone: "765-889-1804",
+				title: "Space The Final Frontier",
+				company: "American Express UK",
+				status: "VIP Companies"
+			},
+			{
+				contact: "Bill Buchanan",
+				email: "bill-buch@yahoo.com",
+				phone: "967-527-9383",
+				title: "Telescopes 101",
+				company: "Admiral Group plc",
+				status: "Top Companies"
+			},
+			{
+				contact: "Effie Guzman",
+				email: "effie-guz@yahoo.com",
+				phone: "829-779-4544",
+				title: "The Amazing Hubble",
+				company: "Exxon Mobil",
+				status: "New Companies"
+			},
+			{
+				contact: "Rodney Boone",
+				email: "rodne@lind.co.uk",
+				phone: "174-612-7499",
+				title: "Asteroids",
+				company: "Royal Dutch Shell",
+				status: "VIP Companies"
+			},
+			{
+				contact: "Barbara Maxwell",
+				email: "barbara-maxwell@hotmail.com",
+				phone: "783-320-7752",
+				title: "Telescopes 101",
+				company: "American Express UK",
+				status: "Top Companies"
+			},
+			{
+				contact: "Ellen Thornton",
+				email: "thornton@crooks.com",
+				phone: "926-605-0520",
+				title: "The Night Sky",
+				company: "Volkswagen",
+				status: "New Companies"
+			},
 		]
 	},
 	{
@@ -1553,6 +1853,106 @@ const users = [
 				company: "Exxon Mobil",
 				status: "CONTACT",
 				sales: 145.01
+			},
+		],
+		clients: [
+			{
+				contact: "Jose Cortez",
+				email: "torphy_shanon@gmail.com",
+				phone: "765-889-1804",
+				title: "Space The Final Frontier",
+				company: "American Express UK",
+				status: "VIP Clients"
+			},
+			{
+				contact: "Bill Buchanan",
+				email: "bill-buch@yahoo.com",
+				phone: "967-527-9383",
+				title: "Telescopes 101",
+				company: "Admiral Group plc",
+				status: "Top Sale"
+			},
+			{
+				contact: "Effie Guzman",
+				email: "effie-guz@yahoo.com",
+				phone: "829-779-4544",
+				title: "The Amazing Hubble",
+				company: "Exxon Mobil",
+				status: "New Clients"
+			},
+			{
+				contact: "Rodney Boone",
+				email: "rodne@lind.co.uk",
+				phone: "174-612-7499",
+				title: "Asteroids",
+				company: "Royal Dutch Shell",
+				status: "VIP Clients"
+			},
+			{
+				contact: "Barbara Maxwell",
+				email: "barbara-maxwell@hotmail.com",
+				phone: "783-320-7752",
+				title: "Telescopes 101",
+				company: "American Express UK",
+				status: "Top Sale"
+			},
+			{
+				contact: "Ellen Thornton",
+				email: "thornton@crooks.com",
+				phone: "926-605-0520",
+				title: "The Night Sky",
+				company: "Volkswagen",
+				status: "New Clients"
+			},
+		],
+		companies: [
+			{
+				contact: "Jose Cortez",
+				email: "torphy_shanon@gmail.com",
+				phone: "765-889-1804",
+				title: "Space The Final Frontier",
+				company: "American Express UK",
+				status: "VIP Companies"
+			},
+			{
+				contact: "Bill Buchanan",
+				email: "bill-buch@yahoo.com",
+				phone: "967-527-9383",
+				title: "Telescopes 101",
+				company: "Admiral Group plc",
+				status: "Top Companies"
+			},
+			{
+				contact: "Effie Guzman",
+				email: "effie-guz@yahoo.com",
+				phone: "829-779-4544",
+				title: "The Amazing Hubble",
+				company: "Exxon Mobil",
+				status: "New Companies"
+			},
+			{
+				contact: "Rodney Boone",
+				email: "rodne@lind.co.uk",
+				phone: "174-612-7499",
+				title: "Asteroids",
+				company: "Royal Dutch Shell",
+				status: "VIP Companies"
+			},
+			{
+				contact: "Barbara Maxwell",
+				email: "barbara-maxwell@hotmail.com",
+				phone: "783-320-7752",
+				title: "Telescopes 101",
+				company: "American Express UK",
+				status: "Top Companies"
+			},
+			{
+				contact: "Ellen Thornton",
+				email: "thornton@crooks.com",
+				phone: "926-605-0520",
+				title: "The Night Sky",
+				company: "Volkswagen",
+				status: "New Companies"
 			},
 		]
 	},

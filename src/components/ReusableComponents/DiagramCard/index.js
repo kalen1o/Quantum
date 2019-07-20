@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './DiagramCard.module.css';
 import {BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from 'recharts';
 import dots from '../../../icons/dots.svg';
+import HeaderCard from '../HeaderCard';
 
 const CustomizeLabel = (props) => {
 	const {x, y, value, width} = props;
@@ -37,12 +38,7 @@ class DiagramCard extends Component {
 		data = this.state.data ? data.reverse() : data
 		return (
 			<div className={classes.card}>
-				<div className={classes.header}>
-					<h6>{this.props.header}</h6>
-					<button onClick={this.handleDots} type="button">
-						<img src={dots} alt={dots} />
-					</button>
-				</div>
+				<HeaderCard title={this.props.header} onClick={this.handleDots} icon={dots} />
 				<ResponsiveContainer width="100%" height={450}>
 					<BarChart
 						layout="vertical"

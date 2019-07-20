@@ -6,17 +6,33 @@
 	width: 30%;
 }
 
-.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid #f5f5f5;
-	padding: 15px 30px;
+.card-info {
+	transition: height 0.3s;
+	overflow: hidden;
 }
 
-.header button {
+.big-input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.small-input {
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.small-input-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn {
+	width: 100%;
+	background: transparent;
 	border: none;
 	outline: none;
-	background: transparent;
-	padding: 0;
+	color: #b3b3b3;
+	font-size: 12px;
+	font-weight: 900;
+	padding: 20px;
 }

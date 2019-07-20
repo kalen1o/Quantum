@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import classes from './TaskCard.module.css';
 import dots from '../../../icons/dots.svg';
 
+import HeaderCard from '../HeaderCard';
+
 class TaskCard extends Component {
 	state = {
 		open: true
@@ -16,10 +18,7 @@ class TaskCard extends Component {
 	render() {
 		return (
 			<div className={classes.card}>
-				<div className={classes.header}>
-					{this.props.data.label}
-					<img src={dots} alt={dots} onClick={this.handleOpen}/>
-				</div>
+				<HeaderCard title={this.props.data.label} onClick={this.handleOpen} icon={dots} />
 				<div className={classes.info} style={this.state.open ? {display: "flex"} : {display: "none"}}>
 					<h1 className={classes.h1}>{this.props.data.quantity}</h1>
 					<div>

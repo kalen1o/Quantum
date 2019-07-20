@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './CreateEventCard.module.css';
 
-import { Formik, Form, Field } from "formik";
+import { Formik, Form } from "formik";
 import { CreateEventSchema } from '../../../config/yup';
 import DefaultInput from '../../ReusableComponents/DefaultInput';
 import accountCircle from '../../../icons/account_circle.svg';
