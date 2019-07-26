@@ -10,7 +10,7 @@ import HeaderCard from '../HeaderCard';
 
 class CreateContactCard extends Component {
 	state = {
-		open: true
+		open: Boolean(+this.props.open)
 	}
 
 	handleClick = () => {
@@ -20,29 +20,27 @@ class CreateContactCard extends Component {
 	}
 
 	render() {
+		const defaultValues = {
+			phoneType: "PHONE WORK",
+			emailType: "EMAIL WORK",
+			social: "",
+			socialType: "SKYPE"
+		}
+		let values = {...defaultValues, ...this.props.values}
 		return (
 			<div className={classes.card}>
-				<HeaderCard title="New Contact" onClick={this.handleClick} icon={arrowUp} open={this.state.open} />
+				<HeaderCard title={this.props.title} onClick={this.handleClick} icon={arrowUp} open={this.state.open} />
 				<Formik
-					initialValues={{
-						fullname: "",
-						company: "",
-						phoneContact: "",
-						phoneType: "PHONE WORK",
-						emailContact: "",
-						emailType: "EMAIL WORK",
-						social: "",
-						socialType: "SKYPE"
-					}}
+					initialValues={values}
 					validationSchema={CreateContactSchema}
 					onSubmit={(values, {resetForm}) => {
 						console.log(values)
 						resetForm({
-							fullname: "",
+							contact: "",
 							company: "",
-							phoneContact: "",
+							phone: "",
 							phoneType: "PHONE WORK",
-							emailContact: "",
+							email: "",
 							emailType: "EMAIL WORK",
 							social: "",
 							socialType: "SKYPE"
@@ -52,17 +50,17 @@ class CreateContactCard extends Component {
 						return (
 							<Form>
 								<div className={classes["card-info"]} style={this.state.open ? {height: "auto", padding: "25px"} : {height: "0", padding: "0"}}>
-									<DefaultInput name="fullname" placeholder="Full Name" classDiv={classes["big-input"]} errors={errors} touched={touched} />
+									<DefaultInput name="contact" placeholder="Full Name" classDiv={classes["big-input"]} errors={errors} touched={touched} />
 									<DefaultInput name="company" placeholder="Company Name" classDiv={classes["big-input"]} errors={errors} touched={touched} />
 									<div className={classes["small-input-wrapper"]}>
-										<DefaultInput name="phoneContact" placeholder="Phone Number" classDiv={classes["small-input"]} errors={errors} touched={touched} />
+										<DefaultInput name="phone" placeholder="Phone Number" classDiv={classes["small-input"]} errors={errors} touched={touched} />
 										<DefaultSelect name="phoneType" value={values.phoneType} onChange={setFieldValue} type="1" classDiv={classes["small-input"]} errors={errors} touched={touched} >
 											<option value="PHONE WORK">PHONE WORK</option>
 											<option value="PHONE HOME">PHONE HOME</option>
 										</DefaultSelect>
 									</div>
 									<div className={classes["small-input-wrapper"]}>
-										<DefaultInput name="emailContact" placeholder="Email" classDiv={classes["small-input"]} errors={errors} touched={touched} />
+										<DefaultInput name="email" placeholder="Email" classDiv={classes["small-input"]} errors={errors} touched={touched} />
 										<DefaultSelect name="emailType" value={values.emailType} onChange={setFieldValue} type="1" classDiv={classes["small-input"]} errors={errors} touched={touched} >
 											<option value="EMAIL WORK">EMAIL WORK</option>
 											<option value="EMAIL HOME">EMAIL HOME</option>
@@ -75,7 +73,7 @@ class CreateContactCard extends Component {
 											<option value="VIBER">VIBER</option>
 										</DefaultSelect>
 									</div>
-									<button type="submit" className={classes.btn}>ADD CONTACT</button>
+									<button type="submit" className={classes.btn}>ADD {this.props.buttonLabel}</button>
 								</div>
 							</Form>
 						)

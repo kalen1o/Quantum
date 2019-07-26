@@ -2,28 +2,10 @@ import React, { Component } from 'react';
 import classes from './ScheduleCard.module.css';
 import MyTabs from '../MyTabs';
 import Stepper from '../Stepper';
-import phone from '../../../icons/phone.svg';
-import message from '../../../icons/message.svg';
 import Messages from '../Messages';
+import restore from '../../../icons/restore.svg';
 
 const array = [ "Planned", "Past" ]
-
-const plans = [
-	{
-		icon: phone,
-		title: "Call to Janet Claver",
-		date: "02 May 2016",
-		time: "06:30 PM  –  07:00 PM",
-		name: "Rose Chavez"
-	},
-	{
-		icon: message,
-		title: "Tips For Designing An Effective Business Card",
-		date: "02 May 2016",
-		time: "06:30 PM  –  07:00 PM",
-		name: "Rose Chavez"
-	},
-]
 
 class ScheduleCard extends Component {
 	render() {
@@ -33,8 +15,17 @@ class ScheduleCard extends Component {
 					<MyTabs tab={array} />
 				</div>
 				<div className={classes["card-content"]}>
-					<Stepper data={plans} />
-					<Messages data={plans} />
+					{
+						this.props.plans ?
+							<>
+								<Stepper data={this.props.plans} />
+								<Messages data={this.props.plans} />
+							</> :
+							<div className={classes["without-content"]}>
+								<img src={restore} alt={restore} /> 
+								<span>No Task Added</span>
+							</div>
+					}
 				</div>
 			</div>
 		)

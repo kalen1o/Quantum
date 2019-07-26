@@ -10,6 +10,7 @@ const StyledTableCell = withStyles(theme => ({
 	body: {
 	  color: "#999999",
 	  fontSize: 13,
+	  fontWeight: "inherit",
 	  padding: 7
 	}
   }))(TableCell);

@@ -11,10 +11,10 @@ const Stepper = props => (
 	<div className={classes["stepper-wrapper"]}>
 		<div className={classes.stepper}>
 			{props.data.map((element, index) => (
-					<>
+					<div key={index}>
 						<Circle src={element.icon} />
 						{index !== props.data.length - 1 ? <div className={classes.spanner}></div> : null}
-					</>
+					</div>
 				))}
 		</div>
 	</div>

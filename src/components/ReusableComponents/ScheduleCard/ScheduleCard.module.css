@@ -15,3 +15,15 @@
 	padding: 40px;
 	display: flex;
 }
+
+.without-content {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.without-content span {
+	color: #999999;
+	font-size: 13px;
+}

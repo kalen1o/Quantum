@@ -19,6 +19,7 @@ import search from '../../../icons/search.svg';
 import settings from '../../../icons/settings.svg';
 
 import StyledTableCell from '../../ReusableComponents/StyledTableCell';
+import { withRouter } from "react-router";
 
 function desc(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -313,7 +314,7 @@ function ClientsTable(props) {
                           inputProps={{ 'aria-labelledby': labelId }}
                         />
                       </StyledTableCell>
-                      <StyledTableCell component="th" id={labelId} scope="row" padding="none" className={classes.cell}>
+                      <StyledTableCell component="th" id={labelId} scope="row" padding="none" className={classes.cell} onClick={() => props.history.push(`/companies/${row.company}`)}>
                         {row.company}
                       </StyledTableCell>
                       <StyledTableCell className={classes.cell}>{row.email}</StyledTableCell>
@@ -351,4 +352,4 @@ function ClientsTable(props) {
   );
 }
 
-export default ClientsTable;
+export default withRouter(ClientsTable);

@@ -20,6 +20,16 @@ import apple5ssilver from '../images/apple5ssilver.png';
 import apple7128 from '../images/apple7128.png';
 import senseit from '../images/senseit.png';
 import xiomi from '../images/xiomi.png';
+import mathildaJensen from '../images/Mathilda_Jensen.png';
+import billNeal from '../images/Bill_Neal.png';
+import loisJames from '../images/Lois_James.png';
+import earlPeterson from '../images/Earl_Peterson.png';
+import gussiePayne from '../images/Gussie_Payne.png';
+import pearlSantiago from '../images/Pearl_Santiago.png';
+import bryanQuinn from '../images/Bryan_Quinn.png';
+import ireneManning from '../images/Irene_Manning.png';
+import attachment1 from '../images/attachment1.png';
+import attachment2 from '../images/attachment2.png';
 
 const users = [
 	{
@@ -499,6 +509,58 @@ const users = [
 				title: "The Night Sky",
 				company: "Volkswagen",
 				status: "New Companies"
+			},
+		],
+		mail: [
+			{
+				name: "Google Inc",
+				theme: "Adwords Keyword Research For Beginners",
+				bookmark: true,
+				time: "07:24 AM",
+				status: false,
+				important: true
+			},
+			{
+				name: "Apple",
+				theme: "Types Of Cookware Pots And Pans",
+				bookmark: false,
+				time: "05:12 AM",
+				status: false,
+				important: true
+			},
+			{
+				name: "Mathilda Jensen",
+				avatar: mathildaJensen,
+				theme: "Types Of Cookware Pots And Pans",
+				bookmark: false,
+				time: "05:12 AM",
+				status: false,
+				important: true
+			},
+			{
+				name: "Google Inc",
+				theme: "What Is The Big R For Marketing Your Business",
+				bookmark: true,
+				time: "05:12 AM",
+				status: true,
+				important: true
+			},
+			{
+				name: "Yell Inc ",
+				theme: "Gourmet Cooking For Pleasure",
+				bookmark: true,
+				time: "03:12 AM",
+				status: true,
+				important: false
+			},
+			{
+				name: "Bill Neal",
+				avatar: mathildaJensen,
+				theme: "Types Of Cookware Pots And Pans",
+				bookmark: true,
+				time: "05:12 AM",
+				status: false,
+				important: false
 			},
 		]
 	},
@@ -993,6 +1055,172 @@ const users = [
 				title: "The Night Sky",
 				company: "Volkswagen",
 				status: "New Companies"
+			},
+		],
+		mail: [
+			{
+				name: "Google Inc",
+				email: "google@gmail.com",
+				theme: "Adwords Keyword Research For Beginners",
+				bookmark: true,
+				time: "07:24 AM",
+				status: false,
+				important: true,
+				type: "Inbox",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment1, attachment2 ]
+			},
+			{
+				name: "Apple",
+				email: "apple@gmail.com",
+				theme: "Types Of Cookware Pots And Pans",
+				bookmark: false,
+				time: "05:12 AM",
+				status: false,
+				important: true,
+				type: "Draft",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment1 ]
+			},
+			{
+				name: "Mathilda Jensen",
+				email: "mathilda_jensen@gmail.com",
+				avatar: mathildaJensen,
+				theme: "Ннpes Of Cookware Pots And Pans",
+				bookmark: false,
+				time: "05:12 AM",
+				status: false,
+				important: true,
+				type: "Sent Mail",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: []
+			},
+			{
+				name: "Google Inc",
+				email: "google@gmail.com",
+				theme: "What Is The Big R For Marketing Your Business",
+				bookmark: true,
+				time: "05:12 AM",
+				status: true,
+				important: true,
+				type: "Inbox",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment1, attachment2 ]
+			},
+			{
+				name: "Yell Inc ",
+				email: "yell@gmail.com",
+				theme: "Gourmet Cooking For Pleasure",
+				bookmark: true,
+				time: "03:12 AM",
+				status: true,
+				important: false,
+				type: "Draft",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment1, attachment2 ]
+			},
+			{
+				name: "Bill Neal",
+				email: "bill_neal@gmail.com",
+				avatar: billNeal,
+				theme: "The Night Sky",
+				bookmark: true,
+				time: "05:12 AM",
+				status: false,
+				important: false,
+				type: "Inbox",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment1, attachment2 ]
+			},
+			{
+				name: "Lois James",
+				email: "lois_james@gmail.com",
+				avatar: loisJames,
+				theme: "Pes Of Cookware Pots And Pans",
+				bookmark: false,
+				time: "03:07 AM",
+				status: true,
+				important: false,
+				type: "Draft",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment1, attachment2 ]
+			},
+			{
+				name: "Earl Peterson",
+				email: "earl_peterson@gmail.com",
+				avatar: earlPeterson,
+				theme: "Choose The Perfect Accommodations",
+				bookmark: false,
+				time: "02:12 AM",
+				status: false,
+				important: false,
+				type: "Sent Mail",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment1, attachment2 ]
+			},
+			{
+				name: "Gussie Payne",
+				email: "gussie_payne@gmail.com",
+				avatar: gussiePayne,
+				theme: "Comment On The Importance Of Human Life",
+				bookmark: false,
+				time: "02:11 AM",
+				status: true,
+				important: true,
+				type: "Draft",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment2 ]
+			},
+			{
+				name: "Pearl Santiago",
+				email: "pearl_santiago@gmail.com",
+				avatar: pearlSantiago,
+				theme: "Breast Lifts Improvement Without Implants",
+				bookmark: false,
+				time: "01:12 AM",
+				status: true,
+				important: false,
+				type: "Sent Mail",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment2 ]
+			},
+			{
+				name: "Nelle Chandler",
+				email: "nelle_chandler@gmail.com",
+				theme: "Live Poker How To Win Tournament Games",
+				bookmark: true,
+				time: "01:09 AM",
+				status: true,
+				important: false,
+				type: "Sent Mail",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: []
+			},
+			{
+				name: "Bryan Quinn",
+				email: "bryan_quinn@gmail.com",
+				avatar: bryanQuinn,
+				theme: "Cheap Romantic Vacations",
+				bookmark: true,
+				time: "01:12 AM",
+				status: true,
+				important: false,
+				type: "Trash",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment1, attachment2 ]
+			},
+			{
+				name: "Irene Manning",
+				email: "irene_manning@gmail.com",
+				avatar: ireneManning,
+				theme: "Lifts Improvement Without Implants",
+				bookmark: false,
+				time: "00:19 AM",
+				status: true,
+				important: false,
+				type: "Trash",
+				message: "Texas Holdem is by far the most common for of poker played today due to is popularity there are even several TV shows of the game. Besides being popular texas Holdem is also the best game for a beginner to learn, the game can be learned after a few minutes and afte just a few hours of practice you can be playing fairly well against other beginners, but to really get good you must play often.",
+				attachments: [ attachment1, attachment2 ]
 			},
 		]
 	},

@@ -13,7 +13,10 @@ import AnalyticsDashboard from './screens/AnalyticsDashboard';
 import AllDeals from './screens/AllDeals';
 import CreateDeal from './screens/CreateDeal';
 import Clients from './screens/Clients';
+import ClientProfile from './screens/ClientProfile';
 import Companies from './screens/Companies';
+import CompanyProfile from './screens/CompanyProfile';
+import Mailbox from './screens/Mailbox';
 
 import {Provider, connect}   from 'react-redux';
 import {createStore} from 'redux';
@@ -54,7 +57,10 @@ class App extends Component {
               <Route path="/deals-dashboard" render = { (props) => <AllDeals {...props} user={user} /> } exact />
               <Route path="/create-deal-dashboard" render = { (props) => <CreateDeal {...props} user={user} /> } exact />
               <Route path="/clients" render = { (props) => <Clients {...props} user={user} /> } exact />
+              <Route path="/clients/:name" render = { (props) => <ClientProfile {...props} user={user} /> } exact />
               <Route path="/companies" render = { (props) => <Companies {...props} user={user} /> } exact />
+              <Route path="/companies/:name" render = { (props) => <CompanyProfile {...props} user={user} /> } exact />
+              <Route path="/mailbox" render = { (props) => <Mailbox {...props} user={user} /> } exact />
             </Switch>
           </div>
         </div>

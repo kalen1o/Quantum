@@ -23,16 +23,16 @@ const useStylesMessage = theme => ({
 		margin: "50px 0 15px",
 		position: "relative",
 		"&::after": {
-			content: "",
+			content: "''",
 			display: "block",
 			position: "absolute",
 			width: 0,
 			height: 0,
 			borderTop: "8px solid transparent",
 			borderBottom: "8px solid transparent",
-			borderRight: "15px solid #fff",
+			borderRight: "15px solid #ffffff",
 			left: -15,
-			top: 15
+			top: 35,
 		}
 	},
 	"name-wrapper": {
@@ -97,7 +97,7 @@ const Messages = props => {
 	return (
 		<div className={classes["messages-wrapper"]}>
 			{props.data.map(element => (
-				<Message data={element} />
+				<Message data={element} key={element.icon}/>
 			))}
 		</div>
 	)

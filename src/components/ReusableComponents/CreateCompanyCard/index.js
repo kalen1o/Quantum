@@ -10,7 +10,7 @@ import HeaderCard from '../HeaderCard';
 
 class CreateCompanyCard extends Component {
 	state = {
-		open: true
+		open: Boolean(+this.props.open)
 	}
 
 	handleClick = () => {
@@ -20,24 +20,23 @@ class CreateCompanyCard extends Component {
 	}
 
 	render() {
+		const defaultValues = {
+			phoneType: "PHONE WORK",
+			emailType: "EMAIL WORK",
+			site: "",
+			address: ""
+		}
+		let values = {...defaultValues, ...this.props.values}
 		return (
 			<div className={classes.card}>
-				<HeaderCard title="New Company" onClick={this.handleClick} icon={arrowUp} open={this.state.open} />
+				<HeaderCard title={this.props.title} onClick={this.handleClick} icon={arrowUp} open={this.state.open} />
 				<Formik
-					initialValues={{
-						companyName: "",
-						phone: "",
-						phoneType: "PHONE WORK",
-						email: "",
-						emailType: "EMAIL WORK",
-						site: "",
-						address: ""
-					}}
+					initialValues={values}
 					validationSchema={CreateCompanySchema}
 					onSubmit={(values, {resetForm}) => {
 						console.log(values)
 						resetForm({
-							companyName: "",
+							company: "",
 							phone: "",
 							phoneType: "PHONE WORK",
 							email: "",
@@ -50,7 +49,7 @@ class CreateCompanyCard extends Component {
 						return (
 							<Form>
 								<div className={classes["card-info"]} style={this.state.open ? {height: "auto", padding: "25px"} : {height: "0", padding: "0"}}>
-									<DefaultInput name="companyName" placeholder="Company Name" classDiv={classes["big-input"]} errors={errors} touched={touched} />
+									<DefaultInput name="company" placeholder="Company Name" classDiv={classes["big-input"]} errors={errors} touched={touched} />
 									<div className={classes["small-input-wrapper"]}>
 										<DefaultInput name="phone" placeholder="Phone Number" classDiv={classes["small-input"]} errors={errors} touched={touched} />
 										<DefaultSelect name="phoneType" value={values.phoneType} onChange={setFieldValue} type="1" classDiv={classes["small-input"]} errors={errors} touched={touched} >

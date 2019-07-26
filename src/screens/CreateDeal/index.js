@@ -8,6 +8,9 @@ import CreateToDoCard from '../../components/ReusableComponents/CreateToDoCard';
 import CreateCompanyCard from '../../components/ReusableComponents/CreateCompanyCard';
 import ScheduleCard from '../../components/ReusableComponents/ScheduleCard';
 
+import phone from '../../icons/phone.svg';
+import message from '../../icons/message.svg';
+
 const way = [
 	{
 		text: "Create Deal", url: "/create-deal-dashboard"
@@ -22,10 +25,45 @@ class CreateDeal extends Component {
 				<h1 className={classes.h1}>Create Deal</h1>
 				<CreateEventCard />
 				<div className={classes["cards-wrapper"]}>
-					<CreateContactCard />
+					<CreateContactCard 
+						title="New Contact" 
+						values={{
+							contact: "",
+							company: "",
+							phone: "",
+							email: "",
+						}}
+						buttonLabel="CONTACT"
+						open="1"
+					/>
 					<CreateToDoCard />
-					<CreateCompanyCard />
-					<ScheduleCard />
+					<CreateCompanyCard 
+						values={{
+							company: "",
+							phone: "",
+							email: "",
+						}}
+						title="New Company" 
+						open="1"
+					/>
+					<ScheduleCard 
+						plans={[
+							{
+								icon: phone,
+								title: "Call to Janet Claver",
+								date: "02 May 2016",
+								time: "06:30 PM  –  07:00 PM",
+								name: "Rose Chavez"
+							},
+							{
+								icon: message,
+								title: "Tips For Designing An Effective Business Card",
+								date: "02 May 2016",
+								time: "06:30 PM  –  07:00 PM",
+								name: "Rose Chavez"
+							},
+						]} 
+					/>
 				</div>
 			</div>
 		)

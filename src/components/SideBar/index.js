@@ -22,6 +22,7 @@ let LiElem = (props) => {
 			<li value={props.index} className={props.active === props.index ? classes.active : ''} onClick={props.onChoose}>
 				<img src={props.src} alt={props.src} /> 
 				{props.open ? <span className={classes.label}>{props.label}</span> : null}
+				{props.open ? <span className={`${classes.children} ${props.active === props.index ? classes["active-child"] : ''}`}>{props.children.length}</span> : null}
 				{props.open ? <img src={arrowRight} alt={arrowRight} className={classes.arrow} /> : null}
 			</li>
 			<div className={classes.drop} style={width > 200 && props.active === props.index && props.openDrop ? {height: `calc(${props.children.length} * 55px)`}: {height: "0"}}>
@@ -65,7 +66,6 @@ const iconsLi = [
 		label: "Email",
 		children: [
 			{text: "Mailbox CRM", url: "/mailbox"},
-			{text: "New Mail", url: "/create-mail"},
 		]
 	},
 	{
@@ -105,7 +105,6 @@ class SideBar extends Component {
 	}
 
 	handleOpenDrop = (value) => {
-		console.log(this.state.active, value)
 		this.state.active === value && this.state.openDrop ?
 		this.setState(state => ({
 			openDrop: !state.openDrop
@@ -114,7 +113,8 @@ class SideBar extends Component {
 	}
 
 	componentDidMount() {
-		switch(this.props.location.pathname) {
+		let pathname = this.props.location.pathname.split("/")
+		switch(`/${pathname[1]}`) {
 			case "/clients":
 			case "/companies":
 			case "/calendar":

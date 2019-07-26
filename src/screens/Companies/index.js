@@ -50,7 +50,7 @@ class Companies extends Component {
 				<div className={classes.card}>
 					<div className={classes.column}>
 						<div className={classes["column-element"]}>
-							<button type="button" className={classes.btn} onClick={this.handleCreateClick}>ADD CLIENT</button>
+							<button type="button" className={classes.btn} onClick={this.handleCreateClick}>ADD COMPANY</button>
 						</div>
 						{columnElem.map(elem => (
 							<div className={`${classes["column-element"]} ${this.state.active === elem.text ? classes.active : ''}`} onClick={this.handleClickColumn} key={elem.text}>
