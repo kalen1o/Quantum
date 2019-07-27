@@ -27,15 +27,15 @@ class CirclePieDiagram extends Component {
 
 	render() {
 		return (
-			<div className={classes.card}>
-				<HeaderCard title="Traffic Sources" onClick={this.handleOpen} icon={dots} />
+			<div className={this.props.classDiv}>
+				<HeaderCard title={this.props.title} onClick={this.handleOpen} icon={dots} />
 				<div style={this.state.open ? {display: "block"} : {display: "none"}}>
 					<PieChart width={590} height={300} onMouseEnter={this.onPieEnter}>
 						<Pie
-						// dataKey="traffic"
+						dataKey="value"
 						data={this.props.data} 
-						cx={275} 
-						cy={125} 
+						cx={this.props.position[1]} 
+						cy={this.props.position[2]} 
 						innerRadius={60}
 						outerRadius={80} 
 						fill="#8884d8"

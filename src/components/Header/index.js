@@ -49,7 +49,6 @@ class Header extends Component {
 										console.log(values)
 									}}
 									render={({errors, touched}) => {
-										console.log(errors.search)
 										return (
 										<Form>
 											<span className={classes["search-input-wrapper"]}>

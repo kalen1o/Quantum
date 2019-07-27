@@ -6,7 +6,7 @@ import DiagramCard from '../../components/ReusableComponents/DiagramCard';
 import LastProductSalesCard from '../../components/ReusableComponents/LastProductSalesCard';
 import StatCard from '../../components/ReusableComponents/StatCard';
 import RevenueCard from '../../components/ReusableComponents/RevenueCard';
-import SimpleTable from '../../components/ReusableComponents/SimpleTable';
+import HiddenTable from '../../components/ReusableComponents/HiddenTable';
 import timeline from '../../icons/timeline.svg';
 import ishoppingCart from '../../icons/ishopping_cart.svg';
 import shoppingBasket from '../../icons/shopping_basket.svg';
@@ -54,7 +54,7 @@ class CommerceDashboard extends Component {
 					{this.props.user.commerceDashboard.stat.map((item, index) => {
 						const icon = statIcons[index]
 						return (
-							<StatCard data={item} icon={icon} />
+							<StatCard data={item} icon={icon} key={Math.random()} />
 						)
 					}
 					)}
@@ -63,13 +63,13 @@ class CommerceDashboard extends Component {
 					{this.props.user.commerceDashboard.revenue.map((item, index) => {
 						const color = revenueColor[index]
 						return (
-							<RevenueCard data={item} color={color} />
+							<RevenueCard data={item} color={color} key={Math.random()} />
 						)
 					})}
 				</div>
 				<div className={classes["simple-table-wrapper"]}>
-					<SimpleTable label="Products Views Stat" data={this.props.user.commerceDashboard.products} sort="views" labels={viewLabels} />
-					<SimpleTable label="Top Sale Products" data={this.props.user.commerceDashboard.products} sort="sales" labels={saleLabels} />
+					<HiddenTable label="Products Views Stat" data={this.props.user.commerceDashboard.products} sort="views" labels={viewLabels} />
+					<HiddenTable label="Top Sale Products" data={this.props.user.commerceDashboard.products} sort="sales" labels={saleLabels} />
 				</div>
 			</div>
 		)

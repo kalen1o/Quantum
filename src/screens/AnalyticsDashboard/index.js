@@ -23,6 +23,9 @@ const colorInfoBoard = ["#3AA4D2", "#1875F0", "#F18F1C", "#5553CE", "#9013FE", "
 const dealLabels = ["Name", "Deals", "Deals Won", "To Do", "Sale"]
 
 class AnalyticsDashboard extends Component {
+	handleClick = () => {
+		this.props.history.push("/create-deal-dashboard")
+	}
 	render() { 
 		return (
 			<div className="content">
@@ -31,7 +34,7 @@ class AnalyticsDashboard extends Component {
 				<div className={classes["tabs-wrapper"]}>
 					<MyTabs tab={array1} />
 					<MyTabs tab={array2} />
-					<button type="button" className={classes.btn}>
+					<button type="button" className={classes.btn} onClick={this.handleClick}>
 						<img src={pencil} alt={pencil} />
 						CREATE DEAL
 					</button>
@@ -50,7 +53,7 @@ class AnalyticsDashboard extends Component {
 					))}
 				</div>
 				<div className={classes["tables-wrapper"]}>
-					<CirclePieDiagram data={this.props.user.analyticsDashboard.circle} />
+					<CirclePieDiagram data={this.props.user.analyticsDashboard.circle} title="Traffic Sources" classDiv={classes.card} position={[275, 125]} />
 					<TotalDeals label="Total Revenue" data={this.props.user.analyticsDashboard.totalDeals} sort="deals" labels={dealLabels} />
 				</div>
 			</div>

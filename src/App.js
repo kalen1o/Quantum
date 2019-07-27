@@ -17,6 +17,7 @@ import ClientProfile from './screens/ClientProfile';
 import Companies from './screens/Companies';
 import CompanyProfile from './screens/CompanyProfile';
 import Mailbox from './screens/Mailbox';
+import Statistic from './screens/Statistic';
 
 import {Provider, connect}   from 'react-redux';
 import {createStore} from 'redux';
@@ -61,6 +62,7 @@ class App extends Component {
               <Route path="/companies" render = { (props) => <Companies {...props} user={user} /> } exact />
               <Route path="/companies/:name" render = { (props) => <CompanyProfile {...props} user={user} /> } exact />
               <Route path="/mailbox" render = { (props) => <Mailbox {...props} user={user} /> } exact />
+              <Route path="/statistic" render = { (props) => <Statistic {...props} user={user} /> } exact />
             </Switch>
           </div>
         </div>

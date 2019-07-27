@@ -6,7 +6,6 @@ import HeaderCard from '../HeaderCard';
 
 const CustomizeLabel = (props) => {
 	const {x, y, value, width} = props;
-	console.log(width)
 	return <text 
                x={x + width - 30} 
                y={y + 27.5} 

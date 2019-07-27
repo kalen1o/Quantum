@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import classes from './CreateToDoCard.module.css';
 
 import { Formik, Form } from "formik";
-import DefaultInput from '../../ReusableComponents/DefaultInput';
-import DefaultSelect from '../../ReusableComponents/DefaultSelect';
-import Editor from '../../ReusableComponents/Editor';
+import DefaultInput from '../DefaultInput';
+import DatePicker from '../DatePicker';
+import DefaultSelect from '../DefaultSelect';
+import Editor from '../Editor';
 import arrowUp from '../../../icons/arrow_up.svg';
-import today from '../../../icons/today.svg';
 import accountCircle from '../../../icons/account_circle.svg';
 import { CreateToDoSchema } from '../../../config/yup';
 
@@ -30,7 +30,7 @@ class CreateToDoCard extends Component {
 					initialValues={{
 						name: "",
 						nameTask: "",
-						date: "",
+						date: new Date(),
 						time: 1,
 						duration: "1:00",
 						textarea: ""
@@ -41,7 +41,7 @@ class CreateToDoCard extends Component {
 						resetForm({
 							name: "",
 							nameTask: "",
-							date: "",
+							date: new Date(),
 							time: "00:00",
 							duration: "1hour",
 							textarea: ""
@@ -53,7 +53,11 @@ class CreateToDoCard extends Component {
 								<div className={classes["card-info"]} style={this.state.open ? {height: "auto", padding: "25px"} : {height: "0", padding: "0"}}>
 									<DefaultInput name="nameTask" placeholder="Task Name" classDiv={classes["big-input"]} errors={errors} touched={touched} />
 									<div className={classes["small-input-wrapper"]}>
-										<DefaultInput name="date" placeholder="Date" icon={today} classDiv={classes["small-input"]} errors={errors} touched={touched} />
+										<DatePicker 
+											name="date"
+											value={values.date}
+											onChange={setFieldValue}
+										/>
 										<DefaultSelect name="time" value={values.time} onChange={setFieldValue} type="0" classDiv={classes["small-input"]} errors={errors} touched={touched} >
 											<option value="00:00">00:00</option>
 											<option value="01:00">01:00</option>
