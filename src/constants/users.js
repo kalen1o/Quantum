@@ -30,6 +30,15 @@ import bryanQuinn from '../images/Bryan_Quinn.png';
 import ireneManning from '../images/Irene_Manning.png';
 import attachment1 from '../images/attachment1.png';
 import attachment2 from '../images/attachment2.png';
+import michaelRussell from '../images/Michael_Russell.png';
+import hildaCarter from '../images/Hilda_Carter.png';
+import duaneLittle from '../images/Duane_Little.png';
+import clydeChapman from '../images/Clyde_Chapman.png';
+import nannieJoseph from '../images/Nannie_Joseph.png';
+import jonNorton from '../images/Jon_Norton.png';
+import kateRoberts from '../images/Kate_Roberts.png';
+import elnoraPoole from '../images/Elnora_Poole.png';
+import video from '../video/hyperX.mp4';
 
 const users = [
 	{
@@ -794,8 +803,449 @@ const users = [
 				{day: "22-10", value: 50},
 				{day: "23-10", value: 55},
 				{day: "24-10", value: 75},
+			],
+			table: [
+				{
+					name: "24-10-2016",
+					visits: 125,
+					visitors: 115,
+					views: 234,
+					percent: 78,
+					failure: 16.5,
+					depth: 2.43,
+					time: "2:46"
+				},
+				{
+					name: "23-10-2016",
+					visits: 102,
+					visitors: 89,
+					views: 432,
+					percent: 85.6,
+					failure: 12,
+					depth: 1.65,
+					time: "5:98"
+				},
+				{
+					name: "22-10-2016",
+					visits: 145,
+					visitors: 135,
+					views: 543,
+					percent: 87,
+					failure: 16,
+					depth: 2.34,
+					time: "5:98"
+				},
+				{
+					name: "21-10-2016",
+					visits: 145,
+					visitors: 135,
+					views: 435,
+					percent: 87,
+					failure: 12,
+					depth: 1.65,
+					time: "5:98"
+				}
 			]
-		}
+		},
+		notes: [
+			{
+				title: "The Amazing Hubble",
+				note: "Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor.",
+				time: "13 Feb 2016",
+				status: "Work Category"
+			},
+			{
+				title: "Influencing The Influencer",
+				note: "Have you ever finally just gave in to the temptation and read your horoscope in the newspaper on Sunday morning? Sure, we all have. For most of us, it’s a curiosity, an amusement to see what they say our day will be like based on the sign of the zodiac.",
+				time: "11 Jan 2016",
+				status: "Work Category"
+			},
+			{
+				title: "How To Look Up",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "09 Jan 2016",
+				status: "Groups"
+			},
+			{
+				title: "Asteroids",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "05 Jan 2016",
+				status: "Find duplicates"
+			},
+			{
+				title: "Telescopes 101",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "03 Jan 2016",
+				status: "Groups"
+			},
+		],
+		todolist: [
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "To Do List"
+			},
+			{
+				text: "The basics of buying a telescope",
+				name: "Duane Little",
+				avatar: duaneLittle,
+				time: "08 Mar 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Hollywood hairstyles do not require a trip to a high priced salon or beautician",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "03 May 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "In Work"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "In Work"
+			},
+			{
+				text: "The basics of buying a telescope",
+				name: "Duane Little",
+				avatar: duaneLittle,
+				time: "08 Mar 2016",
+				status: "In Work"
+			},
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "Done"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "Done"
+			},
+		],
+		chat: [
+			{
+				name: "Clyde Chapman",
+				id: 1,
+				online: false,
+				avatar: clydeChapman,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "For many of us, our very first...",
+						time: "1:22 am",
+						from: false,
+						attachments: [
+							{
+								type: "img",
+								img: attachment1
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Nannie Joseph",
+				id: 2,
+				online: true,
+				avatar: nannieJoseph,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "Astronomy Binoculars A Great...",
+						time: "08:22 am",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Jon Norton",
+				id: 3,
+				online: false,
+				avatar: jonNorton,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "The Basics Of Buying A Telescope...",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Kate Roberts",
+				id: 4,
+				online: false,
+				avatar: kateRoberts,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "What Is The Big R For Marketing...",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Elnora Poole",
+				id: 5,
+				online: false,
+				avatar: elnoraPoole,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "31 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "Nailing It On The Head With Free..",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+		],
+		calendar: [
+			{
+			  'title': 'All Day Event very long title',
+			  'bgColor': '#ff7f50',
+			  'allDay': true,
+			  'start': new Date(2019, 6, 0),
+			  'end': new Date(2019, 6, 1)
+			},
+			{
+			  'title': 'Long Event',
+			  'start': new Date(2019, 6, 7),
+			  'end': new Date(2019, 6, 10)
+			},
+		  
+			{
+			  'title': 'DTS STARTS',
+			  'bgColor': '#dc143c',
+			  'start': new Date(2019, 6, 13, 0, 0, 0),
+			  'end': new Date(2019, 6, 20, 0, 0, 0)
+			},
+		  
+			{
+			  'title': 'DTS ENDS',
+			  'bgColor': '#ff8c00',
+			  'start': new Date(2019, 6, 6, 0, 0, 0),
+			  'end': new Date(2019, 6, 13, 0, 0, 0)
+			},
+		  
+			{
+			  'title': 'Some Event',
+			  'bgColor': '#9932cc',
+			  'start': new Date(2019, 6, 9, 0, 0, 0),
+			  'end': new Date(2019, 6, 9, 0, 0, 0)
+			},
+			{
+			  'title': 'Conference',
+			  'bgColor': '#e9967a',
+			  'start': new Date(2019, 6, 11),
+			  'end': new Date(2019, 6, 13),
+			  desc: 'Big conference for important people'
+			},
+			{
+			  'title': 'Meeting',
+			  'bgColor': '#8fbc8f',
+			  'start': new Date(2019, 6, 12, 10, 30, 0, 0),
+			  'end': new Date(2019, 6, 12, 12, 30, 0, 0),
+			  desc: 'Pre-meeting meeting, to prepare for the meeting'
+			},
+			{
+			  'title': 'Lunch',
+			  'bgColor': '#cd5c5c',
+			  'start':new Date(2019, 7, 12, 12, 0, 0, 0),
+			  'end': new Date(2019, 7, 12, 13, 0, 0, 0),
+			  desc: 'Power lunch'
+			},
+			{
+			  'title': 'Happy Hour',
+			  'start':new Date(2019, 7, 12, 12, 0, 0, 0),
+			  'end': new Date(2019, 7, 12, 13, 0, 0, 0),
+			  desc: 'Power lunch happy hour'
+			},
+			{
+			  'title': 'Meeting',
+			  'bgColor': '#da70d6',
+			  'start':new Date(2019, 7, 12,14, 0, 0, 0),
+			  'end': new Date(2019, 7, 12,15, 0, 0, 0)
+			},
+			{
+			  'title': 'Happy Hour',
+			  'bgColor': '#eee8aa',
+			  'start':new Date(2019, 7, 17, 17, 0, 0, 0),
+			  'end': new Date(2019, 7, 17, 17, 30, 0, 0),
+			  desc: 'Most important meal of the day'
+			},
+			{
+			  'title': 'Dinner',
+			  'bgColor': '#98fb98',
+			  'start':new Date(2019, 7, 15, 20, 0, 0, 0),
+			  'end': new Date(2019, 7, 15, 21, 0, 0, 0)
+			},
+			{
+			  'title': 'Birthday Party',
+			  'bgColor': '#afeeee',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Birthday Party 2',
+			  'bgColor': '#db7093',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Birthday Party 3',
+			  'bgColor': '#cd853f',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Late Night Event',
+			  'bgColor': '#b0e0e6',
+			  'start':new Date(2019, 7, 17, 19, 30, 0),
+			  'end': new Date(2019, 7, 18, 2, 0, 0)
+			},
+			{
+			  'title': 'Multi-day Event',
+			  'start':new Date(2019, 3, 20, 19, 30, 0),
+			  'end': new Date(2019, 3, 22, 2, 0, 0)
+			}
+		]
 	},
 	{
 		login: 'tonyalvarez@gmail.com',
@@ -1616,7 +2066,406 @@ const users = [
 					time: "5:98"
 				}
 			]
-		}
+		},
+		notes: [
+			{
+				title: "The Amazing Hubble",
+				note: "Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor.",
+				time: "13 Feb 2016",
+				status: "Work Category"
+			},
+			{
+				title: "Influencing The Influencer",
+				note: "Have you ever finally just gave in to the temptation and read your horoscope in the newspaper on Sunday morning? Sure, we all have. For most of us, it’s a curiosity, an amusement to see what they say our day will be like based on the sign of the zodiac.",
+				time: "11 Jan 2016",
+				status: "Work Category"
+			},
+			{
+				title: "How To Look Up",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "09 Jan 2016",
+				status: "Groups"
+			},
+			{
+				title: "Asteroids",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "05 Jan 2016",
+				status: "Find duplicates"
+			},
+			{
+				title: "Telescopes 101",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "03 Jan 2016",
+				status: "Groups"
+			},
+		],
+		todolist: [
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "To Do List"
+			},
+			{
+				text: "The basics of buying a telescope",
+				name: "Duane Little",
+				avatar: duaneLittle,
+				time: "08 Mar 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Hollywood hairstyles do not require a trip to a high priced salon or beautician",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "03 May 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "In Work"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "In Work"
+			},
+			{
+				text: "The basics of buying a telescope",
+				name: "Duane Little",
+				avatar: duaneLittle,
+				time: "08 Mar 2016",
+				status: "In Work"
+			},
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "Done"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "Done"
+			},
+		],
+		chat: [
+			{
+				name: "Clyde Chapman",
+				id: 1,
+				online: false,
+				avatar: clydeChapman,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "For many of us, our very first...",
+						time: "1:22 am",
+						from: false,
+						attachments: [
+							{
+								type: "img",
+								img: attachment1
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Nannie Joseph",
+				id: 2,
+				online: true,
+				avatar: nannieJoseph,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "Astronomy Binoculars A Great...",
+						time: "08:22 am",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Jon Norton",
+				id: 3,
+				online: false,
+				avatar: jonNorton,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "The Basics Of Buying A Telescope...",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Kate Roberts",
+				id: 4,
+				online: false,
+				avatar: kateRoberts,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "What Is The Big R For Marketing...",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Elnora Poole",
+				id: 5,
+				online: false,
+				avatar: elnoraPoole,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "31 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "Nailing It On The Head With Free..",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+		],
+		calendar: [
+			{
+			  'title': 'All Day Event very long title',
+			  'bgColor': '#ff7f50',
+			  'allDay': true,
+			  'start': new Date(2019, 6, 0),
+			  'end': new Date(2019, 6, 1)
+			},
+			{
+			  'title': 'Long Event',
+			  'start': new Date(2019, 6, 7),
+			  'end': new Date(2019, 6, 10)
+			},
+		  
+			{
+			  'title': 'DTS STARTS',
+			  'bgColor': '#dc143c',
+			  'start': new Date(2019, 6, 13, 0, 0, 0),
+			  'end': new Date(2019, 6, 20, 0, 0, 0)
+			},
+		  
+			{
+			  'title': 'DTS ENDS',
+			  'bgColor': '#ff8c00',
+			  'start': new Date(2019, 6, 6, 0, 0, 0),
+			  'end': new Date(2019, 6, 13, 0, 0, 0)
+			},
+		  
+			{
+			  'title': 'Some Event',
+			  'bgColor': '#9932cc',
+			  'start': new Date(2019, 6, 9, 0, 0, 0),
+			  'end': new Date(2019, 6, 9, 0, 0, 0)
+			},
+			{
+			  'title': 'Conference',
+			  'bgColor': '#e9967a',
+			  'start': new Date(2019, 6, 11),
+			  'end': new Date(2019, 6, 13),
+			  desc: 'Big conference for important people'
+			},
+			{
+			  'title': 'Meeting',
+			  'bgColor': '#8fbc8f',
+			  'start': new Date(2019, 6, 12, 10, 30, 0, 0),
+			  'end': new Date(2019, 6, 12, 12, 30, 0, 0),
+			  desc: 'Pre-meeting meeting, to prepare for the meeting'
+			},
+			{
+			  'title': 'Lunch',
+			  'bgColor': '#cd5c5c',
+			  'start':new Date(2019, 7, 12, 12, 0, 0, 0),
+			  'end': new Date(2019, 7, 12, 13, 0, 0, 0),
+			  desc: 'Power lunch'
+			},
+			{
+			  'title': 'Happy Hour',
+			  'start':new Date(2019, 7, 12, 12, 0, 0, 0),
+			  'end': new Date(2019, 7, 12, 13, 0, 0, 0),
+			  desc: 'Power lunch happy hour'
+			},
+			{
+			  'title': 'Meeting',
+			  'bgColor': '#da70d6',
+			  'start':new Date(2019, 7, 12,14, 0, 0, 0),
+			  'end': new Date(2019, 7, 12,15, 0, 0, 0)
+			},
+			{
+			  'title': 'Happy Hour',
+			  'bgColor': '#eee8aa',
+			  'start':new Date(2019, 7, 17, 17, 0, 0, 0),
+			  'end': new Date(2019, 7, 17, 17, 30, 0, 0),
+			  desc: 'Most important meal of the day'
+			},
+			{
+			  'title': 'Dinner',
+			  'bgColor': '#98fb98',
+			  'start':new Date(2019, 7, 15, 20, 0, 0, 0),
+			  'end': new Date(2019, 7, 15, 21, 0, 0, 0)
+			},
+			{
+			  'title': 'Birthday Party',
+			  'bgColor': '#afeeee',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Birthday Party 2',
+			  'bgColor': '#db7093',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Birthday Party 3',
+			  'bgColor': '#cd853f',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Late Night Event',
+			  'bgColor': '#b0e0e6',
+			  'start':new Date(2019, 7, 17, 19, 30, 0),
+			  'end': new Date(2019, 7, 18, 2, 0, 0)
+			},
+			{
+			  'title': 'Multi-day Event',
+			  'start':new Date(2019, 3, 20, 19, 30, 0),
+			  'end': new Date(2019, 3, 22, 2, 0, 0)
+			}
+		]
 	},
 	{
 		login: 'katemiddleton@gmail.com',
@@ -2380,8 +3229,449 @@ const users = [
 				{day: "22-10", value: 50},
 				{day: "23-10", value: 55},
 				{day: "24-10", value: 75},
+			],
+			table: [
+				{
+					name: "24-10-2016",
+					visits: 125,
+					visitors: 115,
+					views: 234,
+					percent: 78,
+					failure: 16.5,
+					depth: 2.43,
+					time: "2:46"
+				},
+				{
+					name: "23-10-2016",
+					visits: 102,
+					visitors: 89,
+					views: 432,
+					percent: 85.6,
+					failure: 12,
+					depth: 1.65,
+					time: "5:98"
+				},
+				{
+					name: "22-10-2016",
+					visits: 145,
+					visitors: 135,
+					views: 543,
+					percent: 87,
+					failure: 16,
+					depth: 2.34,
+					time: "5:98"
+				},
+				{
+					name: "21-10-2016",
+					visits: 145,
+					visitors: 135,
+					views: 435,
+					percent: 87,
+					failure: 12,
+					depth: 1.65,
+					time: "5:98"
+				}
 			]
-		}
+		},
+		notes: [
+			{
+				title: "The Amazing Hubble",
+				note: "Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor.",
+				time: "13 Feb 2016",
+				status: "Work Category"
+			},
+			{
+				title: "Influencing The Influencer",
+				note: "Have you ever finally just gave in to the temptation and read your horoscope in the newspaper on Sunday morning? Sure, we all have. For most of us, it’s a curiosity, an amusement to see what they say our day will be like based on the sign of the zodiac.",
+				time: "11 Jan 2016",
+				status: "Work Category"
+			},
+			{
+				title: "How To Look Up",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "09 Jan 2016",
+				status: "Groups"
+			},
+			{
+				title: "Asteroids",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "05 Jan 2016",
+				status: "Find duplicates"
+			},
+			{
+				title: "Telescopes 101",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "03 Jan 2016",
+				status: "Groups"
+			},
+		],
+		todolist: [
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "To Do List"
+			},
+			{
+				text: "The basics of buying a telescope",
+				name: "Duane Little",
+				avatar: duaneLittle,
+				time: "08 Mar 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Hollywood hairstyles do not require a trip to a high priced salon or beautician",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "03 May 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "In Work"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "In Work"
+			},
+			{
+				text: "The basics of buying a telescope",
+				name: "Duane Little",
+				avatar: duaneLittle,
+				time: "08 Mar 2016",
+				status: "In Work"
+			},
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "Done"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "Done"
+			},
+		],
+		chat: [
+			{
+				name: "Clyde Chapman",
+				id: 1,
+				online: false,
+				avatar: clydeChapman,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "For many of us, our very first...",
+						time: "1:22 am",
+						from: false,
+						attachments: [
+							{
+								type: "img",
+								img: attachment1
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Nannie Joseph",
+				id: 2,
+				online: true,
+				avatar: nannieJoseph,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "Astronomy Binoculars A Great...",
+						time: "08:22 am",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Jon Norton",
+				id: 3,
+				online: false,
+				avatar: jonNorton,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "The Basics Of Buying A Telescope...",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Kate Roberts",
+				id: 4,
+				online: false,
+				avatar: kateRoberts,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "What Is The Big R For Marketing...",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Elnora Poole",
+				id: 5,
+				online: false,
+				avatar: elnoraPoole,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "31 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "Nailing It On The Head With Free..",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+		],
+		calendar: [
+			{
+			  'title': 'All Day Event very long title',
+			  'bgColor': '#ff7f50',
+			  'allDay': true,
+			  'start': new Date(2019, 6, 0),
+			  'end': new Date(2019, 6, 1)
+			},
+			{
+			  'title': 'Long Event',
+			  'start': new Date(2019, 6, 7),
+			  'end': new Date(2019, 6, 10)
+			},
+		  
+			{
+			  'title': 'DTS STARTS',
+			  'bgColor': '#dc143c',
+			  'start': new Date(2019, 6, 13, 0, 0, 0),
+			  'end': new Date(2019, 6, 20, 0, 0, 0)
+			},
+		  
+			{
+			  'title': 'DTS ENDS',
+			  'bgColor': '#ff8c00',
+			  'start': new Date(2019, 6, 6, 0, 0, 0),
+			  'end': new Date(2019, 6, 13, 0, 0, 0)
+			},
+		  
+			{
+			  'title': 'Some Event',
+			  'bgColor': '#9932cc',
+			  'start': new Date(2019, 6, 9, 0, 0, 0),
+			  'end': new Date(2019, 6, 9, 0, 0, 0)
+			},
+			{
+			  'title': 'Conference',
+			  'bgColor': '#e9967a',
+			  'start': new Date(2019, 6, 11),
+			  'end': new Date(2019, 6, 13),
+			  desc: 'Big conference for important people'
+			},
+			{
+			  'title': 'Meeting',
+			  'bgColor': '#8fbc8f',
+			  'start': new Date(2019, 6, 12, 10, 30, 0, 0),
+			  'end': new Date(2019, 6, 12, 12, 30, 0, 0),
+			  desc: 'Pre-meeting meeting, to prepare for the meeting'
+			},
+			{
+			  'title': 'Lunch',
+			  'bgColor': '#cd5c5c',
+			  'start':new Date(2019, 7, 12, 12, 0, 0, 0),
+			  'end': new Date(2019, 7, 12, 13, 0, 0, 0),
+			  desc: 'Power lunch'
+			},
+			{
+			  'title': 'Happy Hour',
+			  'start':new Date(2019, 7, 12, 12, 0, 0, 0),
+			  'end': new Date(2019, 7, 12, 13, 0, 0, 0),
+			  desc: 'Power lunch happy hour'
+			},
+			{
+			  'title': 'Meeting',
+			  'bgColor': '#da70d6',
+			  'start':new Date(2019, 7, 12,14, 0, 0, 0),
+			  'end': new Date(2019, 7, 12,15, 0, 0, 0)
+			},
+			{
+			  'title': 'Happy Hour',
+			  'bgColor': '#eee8aa',
+			  'start':new Date(2019, 7, 17, 17, 0, 0, 0),
+			  'end': new Date(2019, 7, 17, 17, 30, 0, 0),
+			  desc: 'Most important meal of the day'
+			},
+			{
+			  'title': 'Dinner',
+			  'bgColor': '#98fb98',
+			  'start':new Date(2019, 7, 15, 20, 0, 0, 0),
+			  'end': new Date(2019, 7, 15, 21, 0, 0, 0)
+			},
+			{
+			  'title': 'Birthday Party',
+			  'bgColor': '#afeeee',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Birthday Party 2',
+			  'bgColor': '#db7093',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Birthday Party 3',
+			  'bgColor': '#cd853f',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Late Night Event',
+			  'bgColor': '#b0e0e6',
+			  'start':new Date(2019, 7, 17, 19, 30, 0),
+			  'end': new Date(2019, 7, 18, 2, 0, 0)
+			},
+			{
+			  'title': 'Multi-day Event',
+			  'start':new Date(2019, 3, 20, 19, 30, 0),
+			  'end': new Date(2019, 3, 22, 2, 0, 0)
+			}
+		]
 	},
 	{
 		login: 'ronaldhenry@gmail.com',
@@ -3145,8 +4435,449 @@ const users = [
 				{day: "22-10", value: 50},
 				{day: "23-10", value: 55},
 				{day: "24-10", value: 75},
+			],
+			table: [
+				{
+					name: "24-10-2016",
+					visits: 125,
+					visitors: 115,
+					views: 234,
+					percent: 78,
+					failure: 16.5,
+					depth: 2.43,
+					time: "2:46"
+				},
+				{
+					name: "23-10-2016",
+					visits: 102,
+					visitors: 89,
+					views: 432,
+					percent: 85.6,
+					failure: 12,
+					depth: 1.65,
+					time: "5:98"
+				},
+				{
+					name: "22-10-2016",
+					visits: 145,
+					visitors: 135,
+					views: 543,
+					percent: 87,
+					failure: 16,
+					depth: 2.34,
+					time: "5:98"
+				},
+				{
+					name: "21-10-2016",
+					visits: 145,
+					visitors: 135,
+					views: 435,
+					percent: 87,
+					failure: 12,
+					depth: 1.65,
+					time: "5:98"
+				}
 			]
-		}
+		},
+		notes: [
+			{
+				title: "The Amazing Hubble",
+				note: "Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor. Spielberg’s blockbuster, “Minority Report”, is set in the year 2054. The future – at least according to a team of MIT futurologists, hired by the cinematic genius – is the captive of embarrassingly personalized and disturbingly intrusive, mostly outdoor.",
+				time: "13 Feb 2016",
+				status: "Work Category"
+			},
+			{
+				title: "Influencing The Influencer",
+				note: "Have you ever finally just gave in to the temptation and read your horoscope in the newspaper on Sunday morning? Sure, we all have. For most of us, it’s a curiosity, an amusement to see what they say our day will be like based on the sign of the zodiac.",
+				time: "11 Jan 2016",
+				status: "Work Category"
+			},
+			{
+				title: "How To Look Up",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "09 Jan 2016",
+				status: "Groups"
+			},
+			{
+				title: "Asteroids",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "05 Jan 2016",
+				status: "Find duplicates"
+			},
+			{
+				title: "Telescopes 101",
+				note: "If you are a serious astronomy fanatic like a lot of us are, you can probably",
+				time: "03 Jan 2016",
+				status: "Groups"
+			},
+		],
+		todolist: [
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "To Do List"
+			},
+			{
+				text: "The basics of buying a telescope",
+				name: "Duane Little",
+				avatar: duaneLittle,
+				time: "08 Mar 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Hollywood hairstyles do not require a trip to a high priced salon or beautician",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "03 May 2016",
+				status: "To Do List"
+			},
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "In Work"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "In Work"
+			},
+			{
+				text: "The basics of buying a telescope",
+				name: "Duane Little",
+				avatar: duaneLittle,
+				time: "08 Mar 2016",
+				status: "In Work"
+			},
+			{
+				text: "Enhance Your Brand Potential With Giant Advertising Blimps",
+				name: "Michael Russell",
+				avatar: michaelRussell,
+				time: "30 Nov 2016",
+				status: "Done"
+			},
+			{
+				text: "Global travel and vacations luxury travel on a tight budget",
+				name: "Hilda Carter",
+				avatar: hildaCarter,
+				time: "30 Nov 2016",
+				status: "Done"
+			},
+		],
+		chat: [
+			{
+				name: "Clyde Chapman",
+				id: 1,
+				online: false,
+				avatar: clydeChapman,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "For many of us, our very first...",
+						time: "1:22 am",
+						from: false,
+						attachments: [
+							{
+								type: "img",
+								img: attachment1
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Nannie Joseph",
+				id: 2,
+				online: true,
+				avatar: nannieJoseph,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "Astronomy Binoculars A Great...",
+						time: "08:22 am",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Jon Norton",
+				id: 3,
+				online: false,
+				avatar: jonNorton,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "The Basics Of Buying A Telescope...",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Kate Roberts",
+				id: 4,
+				online: false,
+				avatar: kateRoberts,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "30 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "What Is The Big R For Marketing...",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+			{
+				name: "Elnora Poole",
+				id: 5,
+				online: false,
+				avatar: elnoraPoole,
+				time: function() {
+					return this.children[this.children.length - 1].time
+				},
+				lastMessage: function() {
+					return this.children[this.children.length - 1].message
+				},
+				day: "31 mar 2016",
+				children: [
+					{
+						message: "Marketers/advertisers usually focus their efforts on the people responsible for making the purchase.",
+						time: "1:20 am",
+						from: false,
+						attachments: []
+					},
+					{
+						message: "One of the earliest activities we engaged in when we first got into astronomy is the same one we like to show our children",
+						time: "1:21 am",
+						from: true,
+						attachments: []
+					},
+					{
+						message: "Nailing It On The Head With Free..",
+						time: "09:33 pm",
+						from: false,
+						attachments: [
+							{
+								type: "video",
+								video: video
+							}
+						]
+					},
+				]
+			},
+		],
+		calendar: [
+			{
+			  'title': 'All Day Event very long title',
+			  'bgColor': '#ff7f50',
+			  'allDay': true,
+			  'start': new Date(2019, 6, 0),
+			  'end': new Date(2019, 6, 1)
+			},
+			{
+			  'title': 'Long Event',
+			  'start': new Date(2019, 6, 7),
+			  'end': new Date(2019, 6, 10)
+			},
+		  
+			{
+			  'title': 'DTS STARTS',
+			  'bgColor': '#dc143c',
+			  'start': new Date(2019, 6, 13, 0, 0, 0),
+			  'end': new Date(2019, 6, 20, 0, 0, 0)
+			},
+		  
+			{
+			  'title': 'DTS ENDS',
+			  'bgColor': '#ff8c00',
+			  'start': new Date(2019, 6, 6, 0, 0, 0),
+			  'end': new Date(2019, 6, 13, 0, 0, 0)
+			},
+		  
+			{
+			  'title': 'Some Event',
+			  'bgColor': '#9932cc',
+			  'start': new Date(2019, 6, 9, 0, 0, 0),
+			  'end': new Date(2019, 6, 9, 0, 0, 0)
+			},
+			{
+			  'title': 'Conference',
+			  'bgColor': '#e9967a',
+			  'start': new Date(2019, 6, 11),
+			  'end': new Date(2019, 6, 13),
+			  desc: 'Big conference for important people'
+			},
+			{
+			  'title': 'Meeting',
+			  'bgColor': '#8fbc8f',
+			  'start': new Date(2019, 6, 12, 10, 30, 0, 0),
+			  'end': new Date(2019, 6, 12, 12, 30, 0, 0),
+			  desc: 'Pre-meeting meeting, to prepare for the meeting'
+			},
+			{
+			  'title': 'Lunch',
+			  'bgColor': '#cd5c5c',
+			  'start':new Date(2019, 7, 12, 12, 0, 0, 0),
+			  'end': new Date(2019, 7, 12, 13, 0, 0, 0),
+			  desc: 'Power lunch'
+			},
+			{
+			  'title': 'Happy Hour',
+			  'start':new Date(2019, 7, 12, 12, 0, 0, 0),
+			  'end': new Date(2019, 7, 12, 13, 0, 0, 0),
+			  desc: 'Power lunch happy hour'
+			},
+			{
+			  'title': 'Meeting',
+			  'bgColor': '#da70d6',
+			  'start':new Date(2019, 7, 12,14, 0, 0, 0),
+			  'end': new Date(2019, 7, 12,15, 0, 0, 0)
+			},
+			{
+			  'title': 'Happy Hour',
+			  'bgColor': '#eee8aa',
+			  'start':new Date(2019, 7, 17, 17, 0, 0, 0),
+			  'end': new Date(2019, 7, 17, 17, 30, 0, 0),
+			  desc: 'Most important meal of the day'
+			},
+			{
+			  'title': 'Dinner',
+			  'bgColor': '#98fb98',
+			  'start':new Date(2019, 7, 15, 20, 0, 0, 0),
+			  'end': new Date(2019, 7, 15, 21, 0, 0, 0)
+			},
+			{
+			  'title': 'Birthday Party',
+			  'bgColor': '#afeeee',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Birthday Party 2',
+			  'bgColor': '#db7093',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Birthday Party 3',
+			  'bgColor': '#cd853f',
+			  'start':new Date(2019, 7, 13, 7, 0, 0),
+			  'end': new Date(2019, 7, 13, 10, 30, 0)
+			},
+			{
+			  'title': 'Late Night Event',
+			  'bgColor': '#b0e0e6',
+			  'start':new Date(2019, 7, 17, 19, 30, 0),
+			  'end': new Date(2019, 7, 18, 2, 0, 0)
+			},
+			{
+			  'title': 'Multi-day Event',
+			  'start':new Date(2019, 3, 20, 19, 30, 0),
+			  'end': new Date(2019, 3, 22, 2, 0, 0)
+			}
+		]
 	},
 ] 
 export default users;

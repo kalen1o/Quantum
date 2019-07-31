@@ -1,0 +1,65 @@
+.editor {
+	display: flex;
+	align-items: center;
+	padding: 30px;
+	border-bottom: 2px solid #f5f5f5;
+}
+
+.img {
+	margin-left: auto;
+}
+
+.textarea-title, .textarea-note {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	border: none;
+	outline: none;
+	resize: none;
+	font-size: 18px;
+	font-weight: 700;
+	color: #666666;
+	margin-bottom: 20px;
+	height: auto;
+}
+
+.textarea-note {
+	font-weight: 500;
+	color: #808080;
+	font-size: 13px;
+	line-height: 30px;
+}
+
+.textarea-note::-webkit-scrollbar {
+	width: 4px;
+	border-radius: 1px
+}
+
+.textarea-note::-webkit-scrollbar-track {
+	background: #ffffff; 
+}
+
+.textarea-note::-webkit-scrollbar-thumb {
+	background: #F0F0F0; 
+}
+
+.textarea-note::-webkit-scrollbar-thumb:hover {
+	background: #555555; 
+}
+
+.btn, .btnCancel {
+	width: 20%;
+	padding: 20px 0;
+	background: #1875F0;
+	font-weight: 900;
+	font-size: 12px;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+}
+
+.btnCancel {
+	margin-bottom: 10px;
+	background: transparent;
+	color: #b3b3b3;
+}

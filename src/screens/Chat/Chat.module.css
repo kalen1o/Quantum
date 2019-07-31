@@ -1,0 +1,65 @@
+.h1 {
+	margin: 20px 0 50px;
+	font-weight: 300;
+	color: #808080;
+}
+
+.card {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	display: flex;
+}
+
+.column {
+	width: 30%;
+	border-right: 2px solid #f5f5f5;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	min-height: 89px;
+	border-bottom: 2px solid #f5f5f5;
+}
+
+.search-input-wrapper {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.btnSearch {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.search-input {
+	width: 100%;
+	font-size: 14px;
+	color: #cccccc;
+	border: none;
+	outline: none;
+	padding: 10px 10px 10px 50px;
+}
+
+.name {
+	display: inline;
+	font-weight: 500;
+	color: #666666;
+}
+
+.time {
+	color: #b6b6b6;
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+.last-message {
+	color: #929292;
+	font-size: 13px;
+}

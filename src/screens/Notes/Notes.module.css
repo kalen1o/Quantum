@@ -1,0 +1,108 @@
+.h1 {
+	margin: 20px 0 50px;
+	font-weight: 300;
+	color: #808080;
+}
+
+.card {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	display: flex;
+}
+
+.column {
+	width: 20%;
+	border-right: 2px solid #f5f5f5;
+}
+
+.column-element {
+	display: flex;
+	align-items: center;
+	padding: 20px 0 20px 20px;
+	font-size: 13px;
+	border-bottom: 2px solid #f5f5f5;
+	border-left: 2px solid transparent;
+}
+
+.column-element:first-child {
+	padding: 20px;
+}
+
+.active {
+	border-left: 2px solid #1875F0;
+}
+
+.btn {
+	width: 100%;
+	padding: 20px 0;
+	background: #1875F0;
+	font-weight: 900;
+	font-size: 12px;
+	color: #FFFFFF;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid #f5f5f5;
+}
+
+.input {
+	width: 30%;
+	border-right: 2px solid #f5f5f5;
+	padding: 0 30px;
+	min-height: 97px;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	min-height: 89px;
+}
+
+.search-input-wrapper {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.btnSearch {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.search-input {
+	width: 100%;
+	font-size: 14px;
+	color: #cccccc;
+	border: none;
+	outline: none;
+	padding: 10px 50px 10px 10px;
+}
+
+.settings {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+}
+
+.settingsBtn {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.notes-holder {
+	display: flex;
+	height: calc(100% - 97px);
+}

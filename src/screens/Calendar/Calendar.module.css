@@ -1,0 +1,13 @@
+.h1 {
+	margin: 20px 0 50px;
+	font-weight: 300;
+	color: #808080;
+}
+
+.card {
+	background: #FFFFFF;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	display: flex;
+	/* min-height: 780px; */
+}

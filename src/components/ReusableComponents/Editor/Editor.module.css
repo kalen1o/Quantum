@@ -5,6 +5,7 @@
 }
 
 .textarea {
+	font-family: 'Roboto', sans-serif;
 	width: 100%;
 	outline: none;
 	resize: none;

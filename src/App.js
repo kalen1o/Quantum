@@ -18,6 +18,10 @@ import Companies from './screens/Companies';
 import CompanyProfile from './screens/CompanyProfile';
 import Mailbox from './screens/Mailbox';
 import Statistic from './screens/Statistic';
+import Notes from './screens/Notes';
+import ToDoList from './screens/ToDoList';
+import Chat from './screens/Chat';
+import Calendar from './screens/Calendar';
 
 import {Provider, connect}   from 'react-redux';
 import {createStore} from 'redux';
@@ -60,9 +64,14 @@ class App extends Component {
               <Route path="/clients" render = { (props) => <Clients {...props} user={user} /> } exact />
               <Route path="/clients/:name" render = { (props) => <ClientProfile {...props} user={user} /> } exact />
               <Route path="/companies" render = { (props) => <Companies {...props} user={user} /> } exact />
+              <Route path="/calendar" render = { (props) => <Calendar {...props} user={user} /> } exact />
               <Route path="/companies/:name" render = { (props) => <CompanyProfile {...props} user={user} /> } exact />
               <Route path="/mailbox" render = { (props) => <Mailbox {...props} user={user} /> } exact />
               <Route path="/statistic" render = { (props) => <Statistic {...props} user={user} /> } exact />
+              <Route path="/notes" render = { (props) => <Notes {...props} user={user} /> } exact />
+              <Route path="/to-do-list" render = { (props) => <ToDoList {...props} user={user} /> } exact />
+              <Route path="/messages" render = { (props) => <Chat {...props} user={user} /> } exact />
+              <Route component = { NotFound } />
             </Switch>
           </div>
         </div>
