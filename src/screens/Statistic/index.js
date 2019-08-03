@@ -27,7 +27,6 @@ const circleHeader = [ "Type gadjets", "Age users", "Traffic Sources" ]
 
 class Statistic extends Component {
 	render() {
-		console.log(this.props)
 		return (
 			<div className="content">
 				<WayBar label="Widgets" array={way} />
@@ -67,12 +66,12 @@ class Statistic extends Component {
 				</div>
 				<div className={classes["board-wrapper"]}>
 					{this.props.user.statistic.circle.map((card, index) => (
-						<CirclePieDiagram title={circleHeader[index]} data={card} classDiv={classes.card} position={[150, 200]} />
+						<CirclePieDiagram title={circleHeader[index]} data={card} classDiv={classes.card} position={[150, 200]} key={Math.random()} />
 					))}
 				</div>
 				<div className={classes["board-wrapper"]}>
 					{this.props.user.statistic.area.map((card, index) => (
-						<AreaCard data={card} />
+						<AreaCard data={card} key={Math.random()} />
 					))}
 				</div>
 				<BarCard data={this.props.user.statistic.bar}/>

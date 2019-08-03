@@ -45,7 +45,6 @@ class NoteEditor extends Component {
 
 	render() {
 		let values = this.props.initialValues
-		console.log(values, 'here')
 		return (
 			<>
 				<div className={classes.editor}>

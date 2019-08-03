@@ -41,13 +41,13 @@ class Pagination extends Component {
                     onClick={this.onPrevious}
                     disabled={page === 0}
                 >
-                    <img src={arrowBack} />
+                    <img src={arrowBack} alt={arrowBack} />
                 </IconButton>
 				<IconButton
                     onClick={this.onNext}
                     disabled={page + 1 >= totalPages}
                 >
-                    <img src={arrowForward} />
+                    <img src={arrowForward} alt={arrowForward} />
                 </IconButton>
 			</div>
 		)

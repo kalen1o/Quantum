@@ -7,7 +7,6 @@ import getLogin from '../../store/actions/getLogin';
 
 class Login extends Component {
 	render() {
-		console.log(this.props.login, 'here')
 		return (
 			<div className="content">
 				<div className={classes["login-wrapper"]}>
