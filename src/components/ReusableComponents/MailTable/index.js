@@ -8,6 +8,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Paper from '@material-ui/core/Paper';
 import Checkbox from '@material-ui/core/Checkbox';
 import TablePagination from '@material-ui/core/TablePagination';
+import Pagination from '../Pagination';
 
 import { Formik, Form, Field } from "formik";
 
@@ -160,7 +161,12 @@ const EnhancedTableToolbar = props => {
 			/>
 			</div>
 			<div className={classes.settings}>
-				<TablePagination
+				<Pagination
+					count={props.rows.length}
+					page={props.page}
+					onChangePage={props.handleChangePage}
+				/>
+				{/* <TablePagination
 					rowsPerPageOptions={[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}
 					component="span"
 					count={props.rows.length}
@@ -174,7 +180,7 @@ const EnhancedTableToolbar = props => {
 					}}
 					onChangePage={props.handleChangePage}
 					onChangeRowsPerPage={props.handleChangeRowsPerPage}
-				/>
+				/> */}
 				<button type="submit" className={classes.settingsBtn}>
 					<img src={settings} alt={settings} />
 				</button>
