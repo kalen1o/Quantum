@@ -17,6 +17,7 @@
 }
 
 .column-element {
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	padding: 20px 0 20px 20px;

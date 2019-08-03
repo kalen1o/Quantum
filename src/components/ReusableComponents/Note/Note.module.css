@@ -1,6 +1,7 @@
 .note {
 	padding: 30px;
 	border-bottom: 2px solid #F2F2F2;
+	cursor: pointer;
 }
 
 .text {

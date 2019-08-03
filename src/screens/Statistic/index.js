@@ -66,7 +66,7 @@ class Statistic extends Component {
 				</div>
 				<div className={classes["board-wrapper"]}>
 					{this.props.user.statistic.circle.map((card, index) => (
-						<CirclePieDiagram title={circleHeader[index]} data={card} classDiv={classes.card} position={[150, 200]} key={Math.random()} />
+						<CirclePieDiagram title={circleHeader[index]} data={card} classDiv={classes.card} position={[190, 130]} key={Math.random()} />
 					))}
 				</div>
 				<div className={classes["board-wrapper"]}>

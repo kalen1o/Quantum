@@ -129,7 +129,11 @@ const useToolbarStyles = makeStyles(theme => ({
 		color: "#cccccc",
 		border: "none",
 		outline: "none",
-		padding: 10,
+    padding: 10,
+    "&::placeholder": {
+      fontSize: 14,
+      color: "#cccccc",
+    }
   },
   settings: {
 		display: 'flex',
@@ -204,6 +208,7 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     width: '100%',
+    boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.05)",
   },
   tableWrapper: {
     overflowX: 'auto',
@@ -300,7 +305,8 @@ function ClientsTable(props) {
                   return (
                     <TableRow
                       hover
-                      onClick={event => handleClick(event, row.contact)}
+                      style={{cursor: "pointer"}}
+                      onClick={() => props.history.push(`/clients/${row.contact}`)}
                       role="checkbox"
                       aria-checked={isItemSelected}
                       tabIndex={-1}
@@ -312,9 +318,13 @@ function ClientsTable(props) {
                           color="primary"
                           checked={isItemSelected}
                           inputProps={{ 'aria-labelledby': labelId }}
+                          onClick={(event) => {
+                            event.stopPropagation()
+                            handleClick(event, row.contact)
+                          }}
                         />
                       </StyledTableCell>
-                      <StyledTableCell component="th" id={labelId} scope="row" padding="none" className={classes.cell} onClick={() => props.history.push(`/clients/${row.contact}`)}>
+                      <StyledTableCell component="th" id={labelId} scope="row" padding="none" className={classes.cell}>
                         {row.contact}
                       </StyledTableCell>
                       <StyledTableCell className={classes.cell}>{row.email}</StyledTableCell>

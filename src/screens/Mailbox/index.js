@@ -72,7 +72,15 @@ class Mailbox extends Component {
 	}
 
 	handleClickRow = (event) => {
-		this.setState({mail: event.target.innerText})
+		console.dir(event.target.id)
+		console.log(event.target.id.length)
+		if(event.target.id.length) {
+			this.setState({mail: event.target.innerText})
+		} if(event.target.tagName === "IMG" || event.target.tagName === "DIV") {
+			this.setState({mail: event.target.parentNode.parentNode.children[5].innerText})
+		} else {
+			this.setState({mail: event.target.parentNode.children[5].innerText})
+		}
 	}
 
 	handleClickBack = () => {
@@ -107,7 +115,7 @@ class Mailbox extends Component {
 							<div className={classes["column-element"]} key={elem.text}>
 								<div 
 								style={{
-									marginRight: 15,
+									marginRight: 25,
 									width: 10,
 									height: 10,
 									borderRadius: 5,

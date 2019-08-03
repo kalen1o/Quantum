@@ -6,15 +6,11 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import Checkbox from "@material-ui/core/Checkbox";
-import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
-import Divider from '@material-ui/core/Divider';
-import DeleteIcon from "@material-ui/icons/Delete";
 import dots from '../../../../icons/dots.svg';
-
+import { StyledTableCellWithoutPadding } from '../../StyledTableCell';
 import StyledTableCell from '../../StyledTableCell';
+import HeaderCard from '../../HeaderCard';
 
 function desc(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -75,7 +71,7 @@ function EnhancedTableHead(props) {
   return (
     <TableHead>
       <TableRow>
-        <StyledTableCell padding="none">
+        <StyledTableCellWithoutPadding>
           <Checkbox
             color="primary"
             indeterminate={numSelected > 0 && numSelected < rowCount}
@@ -83,7 +79,7 @@ function EnhancedTableHead(props) {
             onChange={onSelectAllClick}
             inputProps={{ "aria-label": "Select all desserts" }}
           />
-        </StyledTableCell>
+        </StyledTableCellWithoutPadding>
         {headRows.map(row => (
           <StyledTableCell
             key={row.id}
@@ -109,6 +105,7 @@ const useToolbarStyles = makeStyles(theme => {
   return ({
   root: {
     backgroundColor: 'transparent',
+    padding: 0
   },
   highlight:
     theme.palette.type === "light"
@@ -143,33 +140,7 @@ const EnhancedTableToolbar = props => {
     <Toolbar
       className={`${classes.root} ${numSelected > 0 ? classes.highlight : ''}`}
     >
-      <div className={classes.title}>
-        {numSelected > 0 ? (
-          <Typography color="inherit" variant="subtitle1">
-            {numSelected} selected
-          </Typography>
-        ) : (
-          <Typography variant="h6" className={classes.tableTitle}>
-            Last product sales
-          </Typography>
-        )}
-      </div>
-      <div className={classes.spacer} />
-      <div className={classes.actions}>
-        {numSelected > 0 ? (
-          <Tooltip title="Delete">
-            <IconButton aria-label="Delete">
-              <DeleteIcon />
-            </IconButton>
-          </Tooltip>
-        ) : (
-          <Tooltip title="Filter list">
-            <IconButton aria-label="Filter list">
-              <img src={dots} alt={dots} />
-            </IconButton>
-          </Tooltip>
-        )}
-      </div>
+      <HeaderCard title="Last product sales" icon={dots} />
     </Toolbar>
   );
 };
@@ -243,7 +214,6 @@ export default function EnhancedTable(props) {
   return (
     <div className={classes.root}>
         <EnhancedTableToolbar numSelected={selected.length} />
-        <Divider />
         <div className={classes.tableWrapper}>
           <Table
             className={classes.table}

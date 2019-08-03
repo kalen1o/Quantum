@@ -57,12 +57,15 @@ a {
 }
 
 .content-wrapper {
-  width: 100%;
-  
+  width: 100%;  
 }
 
 .content {
   padding: 65px;
   background: #fafafa;
   height: 100%;
+}
+
+button {
+  cursor: pointer;
 }

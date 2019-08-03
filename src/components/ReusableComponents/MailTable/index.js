@@ -179,6 +179,7 @@ root: {
 },
 paper: {
 	width: '100%',
+	boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.05)",
 },
 tableWrapper: {
 	overflowX: 'auto',
@@ -277,13 +278,14 @@ return (
 				return (
 					<TableRow
 					hover
-					onClick={event => handleClick(event, row.theme)}
+					onClick={props.onClickRow}
 					role="checkbox"
 					aria-checked={isItemSelected}
 					tabIndex={-1}
 					key={row.theme}
 					selected={isItemSelected}
 					style={{
+						cursor: "pointer",
 						fontWeight: `${row.status ? 400 : 700}`
 					}}
 					>
@@ -292,6 +294,10 @@ return (
 						color="primary"
 						checked={isItemSelected}
 						inputProps={{ 'aria-labelledby': labelId }}
+						onClick={(event) => {
+                            event.stopPropagation()
+                            handleClick(event, row.theme)
+                        }}
 						/>
 					</StyledTableCell>
 					<StyledTableCell component="th">
@@ -331,7 +337,7 @@ return (
 					<StyledTableCell component="th" id={labelId} scope="row" padding="none">
 						{row.name}
 					</StyledTableCell>
-					<StyledTableCell onClick={props.onClickRow}>{row.theme}</StyledTableCell>
+					<StyledTableCell>{row.theme}</StyledTableCell>
 					<StyledTableCell align="right">{row.bookmark ? <img src={attachment} alt={attachment} /> : null}</StyledTableCell>
 					<StyledTableCell align="right">{row.time}</StyledTableCell>
 					</TableRow>

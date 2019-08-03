@@ -4,6 +4,10 @@
 	padding: 10px;
 }
 
+.editor img {
+	cursor: pointer;
+}
+
 .textarea {
 	font-family: 'Roboto', sans-serif;
 	width: 100%;

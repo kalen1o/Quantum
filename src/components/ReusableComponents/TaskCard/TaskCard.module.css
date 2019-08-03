@@ -2,7 +2,7 @@
 	background: #FFFFFF;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
 	border-radius: 6px;
-	width: 20%;
+	width: calc(25% - 30px);
 }
 
 .info {

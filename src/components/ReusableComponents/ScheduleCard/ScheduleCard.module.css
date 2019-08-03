@@ -2,7 +2,7 @@
 	border: 2px solid #F5F5F5;
 	border-radius: 6px;
 	margin-bottom: 20px;
-	width: 60%;
+	width: calc(70% - 15px);
 }
 
 .tab-wrapper {

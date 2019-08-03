@@ -49,7 +49,7 @@ const PersonalChat = props => {
 	if(!props.data) {
 		return (
 			<div style={{width: "70%", display: "flex", justifyContent: "center", alignItems: "center"}}>
-				Coose the dialog...
+				Choose the dialog...
 			</div>
 		)
 	}

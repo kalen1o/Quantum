@@ -34,8 +34,8 @@ class CirclePieDiagram extends Component {
 						<Pie
 						dataKey="value"
 						data={this.props.data} 
-						cx={this.props.position[1]} 
-						cy={this.props.position[2]} 
+						cx={this.props.position[0]} 
+						cy={this.props.position[1]} 
 						innerRadius={60}
 						outerRadius={80} 
 						fill="#8884d8"

@@ -129,7 +129,11 @@ const useToolbarStyles = makeStyles(theme => ({
 		color: "#cccccc",
 		border: "none",
 		outline: "none",
-		padding: 10,
+    padding: 10,
+    "&::placeholder": {
+      fontSize: 14,
+      color: "#cccccc",
+    }
   },
   settings: {
 		display: 'flex',
@@ -205,6 +209,7 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     width: '100%',
+		boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.05)",
   },
   tableWrapper: {
     overflowX: 'auto',

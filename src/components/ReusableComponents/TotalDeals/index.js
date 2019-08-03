@@ -1,32 +1,18 @@
 import React, { Component } from 'react';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
 import { withStyles } from "@material-ui/core";
 import dots from '../../../icons/dots.svg';
+import HeaderCard from '../HeaderCard';
+import {StyledTableCellWithoutPadding} from '../StyledTableCell';
 
 const useStyles = theme => ({
 	root: {
-		display: "inline-block",
-		maxWidth: '50%',
-	},
-	spacer: {
-		flex: "1 1 100%"
-	},
-	title: {
-		flex: "0 0 auto"
-	},
-	tableTitle: {
-		transition: "height 0.3s",
-		overflow: "hidden",
-		fontSize: 13
+		width: 'calc(50% - 15px)',
+		boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.05)",
 	},
 	th: {
 		color: "#666666"
@@ -70,37 +56,23 @@ class TotalDeals extends Component {
 		})
 	return (
 		<Paper className={classes.root}>
-			<Toolbar>
-				<div className={classes.title}>
-					<Typography variant="h6" className={classes.tableTitle}>
-						{this.props.label}
-					</Typography>
-				</div>
-				<div className={classes.spacer} />
-				<div className={classes.actions} onClick={this.handleOpen}>
-					<Tooltip title="Filter list">
-						<IconButton aria-label="Filter list">
-						<img src={dots} alt={dots} />
-						</IconButton>
-					</Tooltip>
-				</div>
-			</Toolbar>
-		<Table className={classes.table} style={this.state.open ? {display: "table-row"} : {display: "none"}}>
+			<HeaderCard title={this.props.label} onClick={this.handleOpen} icon={dots} />
+		<Table className={classes.table} style={this.state.open ? {display: "table"} : {display: "none"}}>
 			<TableHead>
 			<TableRow>
-				{this.props.labels.map(label => <TableCell className={classes.th} key={label}>{label}</TableCell>)}
+				{this.props.labels.map(label => <StyledTableCellWithoutPadding className={classes.th} key={label}>{label}</StyledTableCellWithoutPadding>)}
 			</TableRow>
 			</TableHead>
 			<TableBody>
 			{rows.map(row => (
 				<TableRow key={row.name}>
-					<TableCell component="th" scope="row">
+					<StyledTableCellWithoutPadding component="th" scope="row">
 						<span className={classes.nameWrapper}><img src={row.image} alt={row.image} /> {row.name}</span>
-					</TableCell>
-					<TableCell>{row[sort]}</TableCell>
-					<TableCell>{row.won}</TableCell>
-					<TableCell>{row.todo}</TableCell>
-					<TableCell>$ {row.sale}</TableCell>
+					</StyledTableCellWithoutPadding>
+					<StyledTableCellWithoutPadding>{row[sort]}</StyledTableCellWithoutPadding>
+					<StyledTableCellWithoutPadding>{row.won}</StyledTableCellWithoutPadding>
+					<StyledTableCellWithoutPadding>{row.todo}</StyledTableCellWithoutPadding>
+					<StyledTableCellWithoutPadding>$ {row.sale}</StyledTableCellWithoutPadding>
 				</TableRow>
 			))}
 			</TableBody>
