@@ -23,12 +23,25 @@ let LiElem = (props) => {
 				<img src={props.src} alt={props.src} /> 
 				{props.open ? <span className={classes.label}>{props.label}</span> : null}
 				{props.open ? <span className={`${classes.children} ${props.active === props.index ? classes["active-child"] : ''}`}>{props.children.length}</span> : null}
-				{props.open ? <img src={arrowRight} alt={arrowRight} className={classes.arrow} /> : null}
+				{
+					props.open ? 
+						<img 
+							src={arrowRight} 
+							alt={arrowRight} 
+							className={classes.arrow}
+							style={
+								props.active === props.index ?
+									props.openDrop ? {transform: "rotate(270deg)"} : null : 
+									null
+							}
+						/> : 
+						null
+				}
 			</li>
 			<div className={classes.drop} style={width > 200 && props.active === props.index && props.openDrop ? {height: `calc(${props.children.length} * 55px)`}: {height: "0"}}>
 				<ul>
 					{props.children.map(item => (
-						<li key={item.text}>
+						<li key={item.text} className={props.pathname === item.url ? classes.activeDrop : ''}>
 							<Link to={item.url}>{item.text}</Link>
 						</li>
 					))}
@@ -94,7 +107,7 @@ const iconsFuncBtn = [
 
 class SideBar extends Component {
 	state = {
-		active: 0,
+		active: null,
 		openDrop: false
 	}
 
@@ -114,22 +127,24 @@ class SideBar extends Component {
 
 	componentDidMount() {
 		let pathname = this.props.location.pathname.split("/")
-		switch(`/${pathname[1]}`) {
-			case "/clients":
-			case "/companies":
-			case "/calendar":
-			case "/statistic": this.setState({active: 1}); break;
-			case "/mailbox":
-			case "/create-mail": this.setState({active: 2}); break;
-			case "/notes":
-			case "/to-do-list":
-			case "/messages": this.setState({active: 3}); break;
+		switch(pathname[1]) {
+			case "":
+			case "/": this.setState({active: null}); break;
+			case "clients":
+			case "companies":
+			case "calendar":
+			case "statistic": this.setState({active: 1}); break;
+			case "mailbox": this.setState({active: 2}); break;
+			case "notes":
+			case "to-do-list":
+			case "messages": this.setState({active: 3}); break;
 			default:
 				this.setState({active: 0})
 		}
 	}
 
 	render() {
+		let pathname = this.props.location.pathname.split("/")
 		let style = this.props.open ? {minWidth: "255px"} : {width: "80px"}
 		let handleClick = !this.props.open ? this.props.onClickOpen : null;
 		return (
@@ -141,6 +156,7 @@ class SideBar extends Component {
 							src={item.icon} 
 							label={item.label} 
 							open={this.props.open}
+							openDrop={this.state.openDrop}
 							index={index} 
 							active={this.state.active}
 							onChoose={this.handleChoose} 
@@ -148,6 +164,7 @@ class SideBar extends Component {
 							url={item.url}
 							children={item.children}
 							openDrop={this.state.openDrop}
+							pathname={`/${pathname[1]}`}
 						/>
 					))}
 				</ul>

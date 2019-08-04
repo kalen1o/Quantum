@@ -34,7 +34,7 @@
 .task-card-wrapper, .tables-wrapper {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	margin-bottom: 20px;
 }
 

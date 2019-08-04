@@ -86,3 +86,8 @@
 	font-size: 13px;
 	color: #999999;
 }
+
+.drop .activeDrop a {
+	color: #1875f0;
+	background: #fafafa;
+}

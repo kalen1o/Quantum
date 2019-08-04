@@ -66,8 +66,10 @@ class Chat extends Component {
 									display: "flex",
 									alignItems: "center",
 									padding: "20px 15px",
-									borderBottom: "2px solid #f5f5f5"
+									borderBottom: "2px solid #f5f5f5",
+									cursor: "pointer",
 								}}
+								className={+this.state.active === dialog.id ? classes.active : ''}
 								onClick={this.handleClick}
 								key={dialog.id}
 								id={dialog.id}
